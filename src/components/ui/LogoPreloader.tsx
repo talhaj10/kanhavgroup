@@ -26,65 +26,70 @@ export default function LogoPreloader({
     alt: "Kanhav Group Logo",
   },
   backgroundColor = "#110f0e",
-  duration = 1.6,
+  duration = 1.3,
   logoWidth = 320,
   style,
   onComplete,
 }: LogoPreloaderProps) {
-  // Phases: "init" -> "loading" (enter from bottom) -> "logoOut" (exit to top) -> "done" (unmounted)
-  const [phase, setPhase] = useState<"init" | "loading" | "logoOut" | "done">("init");
+  // Start with logo visible immediately ("loading") so it is NEVER a blank screen
+  const [phase, setPhase] = useState<"loading" | "logoOut" | "done">("loading");
 
   useEffect(() => {
+    // If preloader already ran in this browser session, finish immediately
+    if (typeof window !== "undefined" && window.sessionStorage.getItem("kanhav_preloader_done")) {
+      setPhase("done");
+      onComplete?.();
+      return;
+    }
+
     // Lock scroll during preloading
     const originalOverflow = document.body.style.overflow;
     document.body.style.overflow = "hidden";
 
-    // 1. Animate logo in from bottom
-    const t0 = setTimeout(() => {
-      startTransition(() => setPhase("loading"));
-    }, 50);
-
-    // 2. Animate logo up and out
+    // 1. Animate logo up and out
     const t1 = setTimeout(() => {
       startTransition(() => setPhase("logoOut"));
-    }, duration * 1000 + 50);
+    }, duration * 1000);
 
-    // 3. Fade background out and finalize
+    // 2. Fade background out and finalize
     const t2 = setTimeout(() => {
       startTransition(() => {
         setPhase("done");
-        document.body.style.overflow = originalOverflow;
+        document.body.style.overflow = originalOverflow || "";
+        if (typeof window !== "undefined") {
+          window.sessionStorage.setItem("kanhav_preloader_done", "true");
+        }
         onComplete?.();
       });
-    }, duration * 1000 + 750);
+    }, duration * 1000 + 550);
+
+    // 3. Failsafe: force remove preloader after 2.0s even if browser delays
+    const tFailsafe = setTimeout(() => {
+      setPhase("done");
+      document.body.style.overflow = originalOverflow || "";
+      onComplete?.();
+    }, 2000);
 
     return () => {
-      clearTimeout(t0);
       clearTimeout(t1);
       clearTimeout(t2);
-      document.body.style.overflow = originalOverflow;
+      clearTimeout(tFailsafe);
+      document.body.style.overflow = originalOverflow || "";
     };
   }, [duration, onComplete]);
 
   if (phase === "done") return null;
 
-  // Animation states exactly matching Framer specification
   let logoTranslateY = 0;
   let logoOpacity = 1;
 
-  if (phase === "init") {
-    logoTranslateY = 80;
-    logoOpacity = 0;
-  } else if (phase === "loading") {
-    logoTranslateY = 0;
-    logoOpacity = 1;
-  } else if (phase === "logoOut") {
-    logoTranslateY = -80;
+  if (phase === "logoOut") {
+    logoTranslateY = -50;
     logoOpacity = 0;
   }
 
   const bgOpacity = phase === "logoOut" ? 0 : 1;
-  const transition = "all 0.7s cubic-bezier(.7,.2,.2,1)";
+  const transition = "all 0.55s cubic-bezier(.7,.2,.2,1)";
 
   return (
     <div
