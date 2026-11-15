@@ -30,7 +30,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/our-story`,
+      url: `${baseUrl}/about-us/our-story`,
       lastModified: now,
       changeFrequency: "monthly",
       priority: 0.7,
@@ -43,3 +43,4 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 }
+

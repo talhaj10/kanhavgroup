@@ -207,7 +207,7 @@ export const Footer: React.FC = () => {
                 {[
                   { name: "Home", href: "/" },
                   { name: "About Us", href: "/about-us" },
-                  { name: "Our Story", href: "/our-story" },
+                  { name: "Our Story", href: "/about-us/our-story" },
                   { name: "Products", href: "/products" },
                   { name: "Careers", href: "/careers" },
                   { name: "Contact Us", href: "/contact-us" },

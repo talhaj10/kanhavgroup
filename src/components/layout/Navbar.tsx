@@ -16,7 +16,7 @@ export const Navbar: React.FC = () => {
   const navLinks = [
     { name: "Home", href: "/" },
     { name: "About Us", href: "/about-us" },
-    { name: "Our Story", href: "/our-story" },
+    { name: "Our Story", href: "/about-us/our-story" },
     { name: "Products", href: "/products" },
     { name: "Careers", href: "/careers" },
     { name: "Contact Us", href: "/contact-us" },
@@ -24,6 +24,7 @@ export const Navbar: React.FC = () => {
 
   const isLinkActive = (href: string) => {
     if (href === "/") return pathname === "/";
+    if (href === "/about-us") return pathname === "/about-us";
     return pathname.startsWith(href);
   };
 

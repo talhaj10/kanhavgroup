@@ -3,7 +3,7 @@ import OurStoryClient from "./OurStoryClient";
 import { JsonLd } from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Our Heritage & Legacy (1994–2024) | 30 Years of Textile Innovation",
+  title: "Our Heritage & Legacy (1994–2024) | Kanhav Group History & Milestones",
   description:
     "Trace the evolution of Kanhav Group from circular knitting in 1994 to establishing Kanhav Industries in 2024 with state-of-the-art Karl Mayer warp knitting lines in Surat, Gujarat.",
   keywords: [
@@ -15,13 +15,13 @@ export const metadata: Metadata = {
     "Kanhav Group 30 Years",
   ],
   alternates: {
-    canonical: "https://kanhavgroup.com/our-story",
+    canonical: "https://kanhavgroup.com/about-us/our-story",
   },
   openGraph: {
     title: "Our Heritage & Legacy (1994–2024) | Kanhav Group",
     description:
       "Thirty years of textile manufacturing excellence, technological advancement, and commitment to precision composite engineering.",
-    url: "https://kanhavgroup.com/our-story",
+    url: "https://kanhavgroup.com/about-us/our-story",
     images: [
       {
         url: "/assets/images/about-us-page-background.webp",
@@ -53,8 +53,14 @@ const storyBreadcrumbSchema = {
     {
       "@type": "ListItem",
       position: 2,
+      name: "About Us",
+      item: "https://kanhavgroup.com/about-us",
+    },
+    {
+      "@type": "ListItem",
+      position: 3,
       name: "Our Story",
-      item: "https://kanhavgroup.com/our-story",
+      item: "https://kanhavgroup.com/about-us/our-story",
     },
   ],
 };
