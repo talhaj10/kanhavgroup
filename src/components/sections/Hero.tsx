@@ -3,13 +3,16 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { useRFQ } from "@/context/RFQContext";
 import { KANHAV_DATA } from "@/data/kanhav-data";
 
 interface HeroProps {
-  onOpenRFQ: () => void;
+  onOpenRFQ?: () => void;
 }
 
 export const Hero: React.FC<HeroProps> = ({ onOpenRFQ }) => {
+  const { openRFQ } = useRFQ();
+  const handleRFQ = onOpenRFQ || openRFQ;
   const [activeMetricIdx, setActiveMetricIdx] = useState(0);
 
   const metricWindows = [
@@ -76,7 +79,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenRFQ }) => {
           >
             {/* Primary Button: Off-white rectangle */}
             <button
-              onClick={onOpenRFQ}
+              onClick={() => handleRFQ()}
               className="bg-[#ece8e1] hover:bg-white text-black font-mono text-xs font-bold tracking-wider uppercase px-6 sm:px-7 py-3.5 transition-colors shadow-md"
             >
               Order a sample kit

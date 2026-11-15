@@ -1,71 +1,108 @@
-"use client";
-
-import React from "react";
-import Image from "next/image";
-import { motion } from "framer-motion";
-import { SectionHeader } from "@/components/ui/SectionHeader";
-import { ProductsShowcase } from "@/components/sections/ProductsShowcase";
-import { ApplicationsGrid } from "@/components/sections/ApplicationsGrid";
-import { useRFQ } from "@/context/RFQContext";
+import type { Metadata } from "next";
+import ProductsClient from "./ProductsClient";
+import { JsonLd } from "@/components/seo/JsonLd";
 import { KANHAV_DATA } from "@/data/kanhav-data";
-import { ArrowUpRight, Check, ShieldCheck } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Composite Glass Fabrics Catalog | Multiaxial, Biaxial, Triaxial & UD Fabrics",
+  description:
+    "Explore Kanhav's high-tensile composite glass fabrics: Multiaxial, Unidirectional, Biaxial, Tri-Axial, Quadra-Axial, and Stitch Mats. Tailored GSM layups and German warp-knitted quality in Surat, Gujarat.",
+  keywords: [
+    "Composite Glass Fabrics Catalog",
+    "Multiaxial Fabric India",
+    "Biaxial Glass Fabric",
+    "Triaxial Fabric",
+    "Quadra Axial Fabric",
+    "Unidirectional Fabric",
+    "Stitch Mat",
+    "Combination Mat",
+    "Wind Energy Turbine Blade Fabrics",
+    "Marine Composite Fabrics",
+    "Karl Mayer Warp Knitted Glass",
+  ],
+  alternates: {
+    canonical: "https://kanhavgroup.com/products",
+  },
+  openGraph: {
+    title: "Engineered Composite Fabrics Catalog | Kanhav Industries",
+    description:
+      "High-performance non-crimp multi-axial fabrics, unidirectional reinforcements, and stitch mats engineered for wind energy, marine, and aerospace composites.",
+    url: "https://kanhavgroup.com/products",
+    images: [
+      {
+        url: "/assets/images/multiaxial-fabric-768x512.webp",
+        width: 1200,
+        height: 630,
+        alt: "Kanhav Industries Engineered Composite Glass Fabrics",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Engineered Composite Fabrics Catalog | Kanhav Industries",
+    description:
+      "Comprehensive catalog of German warp-knitted multi-axial, biaxial, triaxial, and unidirectional glass fabrics.",
+    images: ["/assets/images/multiaxial-fabric-768x512.webp"],
+  },
+};
+
+const productsBreadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Home",
+      item: "https://kanhavgroup.com/",
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "Products",
+      item: "https://kanhavgroup.com/products",
+    },
+  ],
+};
+
+const productsCatalogSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Kanhav Industries Composite Products",
+  description: "Complete catalog of composite glass fabrics and technical warp-knitted textiles.",
+  itemListElement: KANHAV_DATA.products.map((p, idx) => ({
+    "@type": "ListItem",
+    position: idx + 1,
+    item: {
+      "@type": "Product",
+      name: p.title,
+      description: p.description,
+      image: `https://kanhavgroup.com${p.image}`,
+      category: p.category,
+      material: "E-Glass Fiber",
+      brand: {
+        "@type": "Brand",
+        name: "Kanhav Industries",
+      },
+      manufacturer: {
+        "@type": "Organization",
+        name: "Kanhav Industries Private Limited",
+      },
+      offers: {
+        "@type": "AggregateOffer",
+        priceCurrency: "INR",
+        availability: "https://schema.org/InStock",
+      },
+    },
+  })),
+};
 
 export default function ProductsPage() {
-  const { openRFQ } = useRFQ();
-
   return (
-    <div className="relative pt-8 sm:pt-12 pb-12">
-      {/* Header */}
-      <section className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 mb-10 sm:mb-12">
-        <motion.div
-          initial={{ opacity: 0, y: 15 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="space-y-4"
-        >
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#f0ede6] border border-black/10 text-kraft-orange font-mono text-xs uppercase tracking-wider font-semibold">
-            <span className="w-1.5 h-1.5 bg-kraft-orange" />
-            <span>Product Portfolio</span>
-          </div>
-          <h1 className="font-display text-5xl sm:text-7xl lg:text-8xl text-kraft-headline tracking-tight uppercase leading-[0.95]">
-            TECHNICAL COMPOSITE FABRICS
-          </h1>
-          <p className="text-base sm:text-xl text-kraft-cream max-w-3xl leading-relaxed">
-            Engineered Multi-Axial Glass Fabrics, Stitch Mats, and Combination Mats designed for maximum mechanical strength, high torsional rigidity, and rapid resin wet-out.
-          </p>
-        </motion.div>
-      </section>
-
-      {/* 7 Products Detailed Grid */}
-      <ProductsShowcase onOpenRFQ={(slug) => openRFQ(slug)} />
-
-      {/* 12 Industry Applications */}
-      <ApplicationsGrid />
-
-      {/* Custom Specification CTA */}
-      <section className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 my-12 sm:my-16 text-center">
-        <div className="bg-white p-10 sm:p-14 rounded-3xl border border-black/[0.08] shadow-sm relative overflow-hidden">
-          <div className="max-w-2xl mx-auto space-y-4 relative z-10">
-            <span className="font-mono text-xs uppercase tracking-widest text-kraft-orange font-semibold">
-              Bespoke Manufacturing
-            </span>
-            <h2 className="text-3xl sm:text-4xl font-bold text-kraft-headline">
-              Need a Custom Fiber Layup, GSM, or Width?
-            </h2>
-            <p className="text-sm sm:text-base text-kraft-cream leading-relaxed">
-              We engineer custom multi-axial architectures with tailored fiber orientations (0°, 90°, ±45°), chopped strand ratios, and hybrid aramid/carbon weaves.
-            </p>
-            <div className="pt-4 flex flex-wrap justify-center gap-4">
-              <button
-                onClick={() => openRFQ()}
-                className="px-8 py-3.5 rounded-full bg-kraft-orange hover:bg-kraft-orange-hover text-white font-mono text-xs font-bold uppercase tracking-wider shadow-sm transition-all"
-              >
-                Inquire For Custom Spec
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
+    <>
+      <JsonLd data={productsBreadcrumbSchema} />
+      <JsonLd data={productsCatalogSchema} />
+      <ProductsClient />
+    </>
   );
 }
