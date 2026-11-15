@@ -1,0 +1,2015 @@
+{
+  "total_targets": 251,
+  "downloaded_count": 251,
+  "failed_count": 0,
+  "assets": [
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/stich-Matt-150x150.webp",
+      "filename": "stich-Matt-150x150.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/stich-Matt-150x150.webp",
+      "size_bytes": 5302,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/stich-Matt-200x133.webp",
+      "filename": "stich-Matt-200x133.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/stich-Matt-200x133.webp",
+      "size_bytes": 5994,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/our-values-icon.svg",
+      "filename": "our-values-icon.svg",
+      "category": "svg",
+      "local_path": "scraped_data/assets/svgs/our-values-icon.svg",
+      "size_bytes": 697,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/textile-solutions-banner-200x112.webp",
+      "filename": "textile-solutions-banner-200x112.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/textile-solutions-banner-200x112.webp",
+      "size_bytes": 8210,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/home-about-us-section-image-300x297.webp",
+      "filename": "home-about-us-section-image-300x297.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/home-about-us-section-image-300x297.webp",
+      "size_bytes": 14790,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/why-choose-us-background-768x512.webp",
+      "filename": "why-choose-us-background-768x512.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/why-choose-us-background-768x512.webp",
+      "size_bytes": 21322,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/wind-mills-background-768x432.webp",
+      "filename": "wind-mills-background-768x432.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/wind-mills-background-768x432.webp",
+      "size_bytes": 33542,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/multiaxial-fabric.webp",
+      "filename": "multiaxial-fabric.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/multiaxial-fabric.webp",
+      "size_bytes": 56830,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/litespeed/css/333c1ff5564eefab740c5c4863624c47.css",
+      "filename": "333c1ff5564eefab740c5c4863624c47.css",
+      "category": "css",
+      "local_path": "scraped_data/assets/css/333c1ff5564eefab740c5c4863624c47.css",
+      "size_bytes": 1501704,
+      "status": "already_downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/railways-768x512.webp",
+      "filename": "railways-768x512.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/railways-768x512.webp",
+      "size_bytes": 66058,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/shipping-containers-300x200.webp",
+      "filename": "shipping-containers-300x200.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/shipping-containers-300x200.webp",
+      "size_bytes": 12926,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/textile-solutions-banner-300x168.webp",
+      "filename": "textile-solutions-banner-300x168.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/textile-solutions-banner-300x168.webp",
+      "size_bytes": 15748,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/shipping-containers-1536x1024.webp",
+      "filename": "shipping-containers-1536x1024.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/shipping-containers-1536x1024.webp",
+      "size_bytes": 193598,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/our-presence-section-background-768x512.webp",
+      "filename": "our-presence-section-background-768x512.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/our-presence-section-background-768x512.webp",
+      "size_bytes": 32184,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/skis-1-150x150.webp",
+      "filename": "skis-1-150x150.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/skis-1-150x150.webp",
+      "size_bytes": 7110,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/about-us-page-background-200x133.webp",
+      "filename": "about-us-page-background-200x133.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/about-us-page-background-200x133.webp",
+      "size_bytes": 8434,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/boats-200x131.webp",
+      "filename": "boats-200x131.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/boats-200x131.webp",
+      "size_bytes": 10846,
+      "status": "already_downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/qudra-axial-fabric-768x512.webp",
+      "filename": "qudra-axial-fabric-768x512.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/qudra-axial-fabric-768x512.webp",
+      "size_bytes": 44544,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/wind-millls-768x1001.jpg",
+      "filename": "wind-millls-768x1001.jpg",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/wind-millls-768x1001.jpg",
+      "size_bytes": 97526,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/skis-150x150.webp",
+      "filename": "skis-150x150.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/skis-150x150.webp",
+      "size_bytes": 4418,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/testimonials-1.webp",
+      "filename": "testimonials-1.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/testimonials-1.webp",
+      "size_bytes": 15018,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/wind-millls-230x300.jpg",
+      "filename": "wind-millls-230x300.jpg",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/wind-millls-230x300.jpg",
+      "size_bytes": 13377,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/product-applications-section-background-768x432.webp",
+      "filename": "product-applications-section-background-768x432.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/product-applications-section-background-768x432.webp",
+      "size_bytes": 7894,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/combination-matt-768x512.webp",
+      "filename": "combination-matt-768x512.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/combination-matt-768x512.webp",
+      "size_bytes": 69388,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/combination-matt.webp",
+      "filename": "combination-matt.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/combination-matt.webp",
+      "size_bytes": 85448,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/construction-300x200.webp",
+      "filename": "construction-300x200.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/construction-300x200.webp",
+      "size_bytes": 16140,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/skis-200x133.webp",
+      "filename": "skis-200x133.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/skis-200x133.webp",
+      "size_bytes": 5032,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/skis-300x200.webp",
+      "filename": "skis-300x200.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/skis-300x200.webp",
+      "size_bytes": 9054,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/unidirectional-fabric-1024x683.webp",
+      "filename": "unidirectional-fabric-1024x683.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/unidirectional-fabric-1024x683.webp",
+      "size_bytes": 55506,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/pipes-768x512.webp",
+      "filename": "pipes-768x512.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/pipes-768x512.webp",
+      "size_bytes": 20998,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/why-choose-us-background-150x150.webp",
+      "filename": "why-choose-us-background-150x150.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/why-choose-us-background-150x150.webp",
+      "size_bytes": 4294,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/why-choose-us-background-300x200.webp",
+      "filename": "why-choose-us-background-300x200.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/why-choose-us-background-300x200.webp",
+      "size_bytes": 7218,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/knitting-capacity-background.webp",
+      "filename": "knitting-capacity-background.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/knitting-capacity-background.webp",
+      "size_bytes": 237294,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/banner-train-200x112.webp",
+      "filename": "banner-train-200x112.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/banner-train-200x112.webp",
+      "size_bytes": 8978,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/pipes-1024x683.webp",
+      "filename": "pipes-1024x683.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/pipes-1024x683.webp",
+      "size_bytes": 29826,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/qudra-axial-fabric-1024x683.webp",
+      "filename": "qudra-axial-fabric-1024x683.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/qudra-axial-fabric-1024x683.webp",
+      "size_bytes": 63256,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/mission-vision-background-200x112.webp",
+      "filename": "mission-vision-background-200x112.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/mission-vision-background-200x112.webp",
+      "size_bytes": 10348,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/sports-equipment-1024x683.webp",
+      "filename": "sports-equipment-1024x683.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/sports-equipment-1024x683.webp",
+      "size_bytes": 101542,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/banner-train-768x432.webp",
+      "filename": "banner-train-768x432.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/banner-train-768x432.webp",
+      "size_bytes": 84204,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/testimonials-2-300x300.webp",
+      "filename": "testimonials-2-300x300.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/testimonials-2-300x300.webp",
+      "size_bytes": 8342,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/shipping-containers-1024x683.webp",
+      "filename": "shipping-containers-1024x683.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/shipping-containers-1024x683.webp",
+      "size_bytes": 105708,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/testimonials-1-200x200.webp",
+      "filename": "testimonials-1-200x200.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/testimonials-1-200x200.webp",
+      "size_bytes": 6618,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/construction-1536x1024.webp",
+      "filename": "construction-1536x1024.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/construction-1536x1024.webp",
+      "size_bytes": 219574,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/stich-Matt.webp",
+      "filename": "stich-Matt.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/stich-Matt.webp",
+      "size_bytes": 46370,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/banner-boat.webp",
+      "filename": "banner-boat.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/banner-boat.webp",
+      "size_bytes": 140698,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/sports-equipment-768x512.webp",
+      "filename": "sports-equipment-768x512.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/sports-equipment-768x512.webp",
+      "size_bytes": 69262,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/plugins/depicter/resources/styles/player/depicter.css",
+      "filename": "depicter.css",
+      "category": "css",
+      "local_path": "scraped_data/assets/css/depicter.css",
+      "size_bytes": 22476,
+      "status": "already_downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/tri-axial-fabric-200x133.webp",
+      "filename": "tri-axial-fabric-200x133.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/tri-axial-fabric-200x133.webp",
+      "size_bytes": 7712,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/windmill-blades-150x150.webp",
+      "filename": "windmill-blades-150x150.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/windmill-blades-150x150.webp",
+      "size_bytes": 2842,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/boats-768x501.webp",
+      "filename": "boats-768x501.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/boats-768x501.webp",
+      "size_bytes": 88574,
+      "status": "already_downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/wind-mills-background-1024x576.webp",
+      "filename": "wind-mills-background-1024x576.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/wind-mills-background-1024x576.webp",
+      "size_bytes": 52730,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/kanhav-industries-ceo-1-200x306.webp",
+      "filename": "kanhav-industries-ceo-1-200x306.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/kanhav-industries-ceo-1-200x306.webp",
+      "size_bytes": 9960,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/kanhav-industries-ceo-150x150.webp",
+      "filename": "kanhav-industries-ceo-150x150.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/kanhav-industries-ceo-150x150.webp",
+      "size_bytes": 3800,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/auto-150x150.webp",
+      "filename": "auto-150x150.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/auto-150x150.webp",
+      "size_bytes": 3924,
+      "status": "already_downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/skis-1.webp",
+      "filename": "skis-1.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/skis-1.webp",
+      "size_bytes": 307180,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/multiaxial-fabric-300x200.webp",
+      "filename": "multiaxial-fabric-300x200.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/multiaxial-fabric-300x200.webp",
+      "size_bytes": 11150,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/knitting-capacity-background-768x432.webp",
+      "filename": "knitting-capacity-background-768x432.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/knitting-capacity-background-768x432.webp",
+      "size_bytes": 80594,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/combination-matt-200x133.webp",
+      "filename": "combination-matt-200x133.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/combination-matt-200x133.webp",
+      "size_bytes": 7036,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/skis-1-1536x1024.webp",
+      "filename": "skis-1-1536x1024.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/skis-1-1536x1024.webp",
+      "size_bytes": 225120,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/tri-axial-fabric-150x150.webp",
+      "filename": "tri-axial-fabric-150x150.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/tri-axial-fabric-150x150.webp",
+      "size_bytes": 6442,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/wind-millls-1572x2048.jpg",
+      "filename": "wind-millls-1572x2048.jpg",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/wind-millls-1572x2048.jpg",
+      "size_bytes": 426765,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/railways.webp",
+      "filename": "railways.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/railways.webp",
+      "size_bytes": 266222,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/skis-1536x1024.webp",
+      "filename": "skis-1536x1024.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/skis-1536x1024.webp",
+      "size_bytes": 97522,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/auto-1536x1025.webp",
+      "filename": "auto-1536x1025.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/auto-1536x1025.webp",
+      "size_bytes": 49328,
+      "status": "already_downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/ceo-message-background-300x169.webp",
+      "filename": "ceo-message-background-300x169.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/ceo-message-background-300x169.webp",
+      "size_bytes": 776,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/kanhav-industries-ceo-1.webp",
+      "filename": "kanhav-industries-ceo-1.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/kanhav-industries-ceo-1.webp",
+      "size_bytes": 22060,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/about-us-page-background-150x150.webp",
+      "filename": "about-us-page-background-150x150.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/about-us-page-background-150x150.webp",
+      "size_bytes": 6686,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/home-about-us-section-image-150x150.webp",
+      "filename": "home-about-us-section-image-150x150.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/home-about-us-section-image-150x150.webp",
+      "size_bytes": 6040,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/wind-mills-background-150x150.webp",
+      "filename": "wind-mills-background-150x150.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/wind-mills-background-150x150.webp",
+      "size_bytes": 4292,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/auto-200x133.webp",
+      "filename": "auto-200x133.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/auto-200x133.webp",
+      "size_bytes": 4552,
+      "status": "already_downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/knitting-capacity-background-200x112.webp",
+      "filename": "knitting-capacity-background-200x112.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/knitting-capacity-background-200x112.webp",
+      "size_bytes": 5508,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/sports-equipment-300x200.webp",
+      "filename": "sports-equipment-300x200.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/sports-equipment-300x200.webp",
+      "size_bytes": 17700,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/india-map-200x225.webp",
+      "filename": "india-map-200x225.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/india-map-200x225.webp",
+      "size_bytes": 8328,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/about-us-page-background-300x200.webp",
+      "filename": "about-us-page-background-300x200.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/about-us-page-background-300x200.webp",
+      "size_bytes": 14296,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/banner-boat-150x150.webp",
+      "filename": "banner-boat-150x150.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/banner-boat-150x150.webp",
+      "size_bytes": 6746,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/wind-millls-1179x1536.jpg",
+      "filename": "wind-millls-1179x1536.jpg",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/wind-millls-1179x1536.jpg",
+      "size_bytes": 227778,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/railways-300x200.webp",
+      "filename": "railways-300x200.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/railways-300x200.webp",
+      "size_bytes": 14398,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/pipes-150x150.webp",
+      "filename": "pipes-150x150.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/pipes-150x150.webp",
+      "size_bytes": 3942,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/product-applications-section-background-150x150.webp",
+      "filename": "product-applications-section-background-150x150.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/product-applications-section-background-150x150.webp",
+      "size_bytes": 1702,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/skis-1024x683.webp",
+      "filename": "skis-1024x683.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/skis-1024x683.webp",
+      "size_bytes": 56820,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/ceo-message-background-200x112.webp",
+      "filename": "ceo-message-background-200x112.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/ceo-message-background-200x112.webp",
+      "size_bytes": 488,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/wind-millls-150x150.jpg",
+      "filename": "wind-millls-150x150.jpg",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/wind-millls-150x150.jpg",
+      "size_bytes": 7158,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/testimonials-3-200x200.webp",
+      "filename": "testimonials-3-200x200.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/testimonials-3-200x200.webp",
+      "size_bytes": 4790,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/09/about-us-company-image-150x150.webp",
+      "filename": "about-us-company-image-150x150.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/about-us-company-image-150x150.webp",
+      "size_bytes": 5862,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/combination-matt-300x200.webp",
+      "filename": "combination-matt-300x200.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/combination-matt-300x200.webp",
+      "size_bytes": 16234,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/09/favicon-150x150.png",
+      "filename": "favicon-150x150.png",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/favicon-150x150.png",
+      "size_bytes": 15854,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/construction-1024x683.webp",
+      "filename": "construction-1024x683.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/construction-1024x683.webp",
+      "size_bytes": 118206,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/india-map.webp",
+      "filename": "india-map.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/india-map.webp",
+      "size_bytes": 24992,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/skis.webp",
+      "filename": "skis.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/skis.webp",
+      "size_bytes": 133104,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/unidirectional-fabric-200x133.webp",
+      "filename": "unidirectional-fabric-200x133.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/unidirectional-fabric-200x133.webp",
+      "size_bytes": 7374,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/testimonials-2-200x200.webp",
+      "filename": "testimonials-2-200x200.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/testimonials-2-200x200.webp",
+      "size_bytes": 4850,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/tri-axial-fabric-768x512.webp",
+      "filename": "tri-axial-fabric-768x512.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/tri-axial-fabric-768x512.webp",
+      "size_bytes": 78382,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/about-us-page-background-768x512.webp",
+      "filename": "about-us-page-background-768x512.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/about-us-page-background-768x512.webp",
+      "size_bytes": 46154,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/litespeed/css/7446d60abd8fb50f2b429325e9f20110.css",
+      "filename": "7446d60abd8fb50f2b429325e9f20110.css",
+      "category": "css",
+      "local_path": "scraped_data/assets/css/7446d60abd8fb50f2b429325e9f20110.css",
+      "size_bytes": 1213455,
+      "status": "already_downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/logo-white-text-300x86.webp",
+      "filename": "logo-white-text-300x86.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/logo-white-text-300x86.webp",
+      "size_bytes": 7808,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/09/about-us-company-image-200x240.webp",
+      "filename": "about-us-company-image-200x240.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/about-us-company-image-200x240.webp",
+      "size_bytes": 9582,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/testimonials-3.webp",
+      "filename": "testimonials-3.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/testimonials-3.webp",
+      "size_bytes": 10604,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/windmill-blades-1536x1024.webp",
+      "filename": "windmill-blades-1536x1024.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/windmill-blades-1536x1024.webp",
+      "size_bytes": 78044,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/why-choose-us-background-1024x683.webp",
+      "filename": "why-choose-us-background-1024x683.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/why-choose-us-background-1024x683.webp",
+      "size_bytes": 29876,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/qudra-axial-fabric-300x200.webp",
+      "filename": "qudra-axial-fabric-300x200.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/qudra-axial-fabric-300x200.webp",
+      "size_bytes": 11454,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/skis-1-200x133.webp",
+      "filename": "skis-1-200x133.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/skis-1-200x133.webp",
+      "size_bytes": 7926,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/knitting-capacity-background-300x169.webp",
+      "filename": "knitting-capacity-background-300x169.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/knitting-capacity-background-300x169.webp",
+      "size_bytes": 12908,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/multiaxial-fabric-150x150.webp",
+      "filename": "multiaxial-fabric-150x150.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/multiaxial-fabric-150x150.webp",
+      "size_bytes": 4572,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/qudra-axial-fabric.webp",
+      "filename": "qudra-axial-fabric.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/qudra-axial-fabric.webp",
+      "size_bytes": 54746,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/truck-trailers.webp",
+      "filename": "truck-trailers.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/truck-trailers.webp",
+      "size_bytes": 151470,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/kanhav-industries-ceo.webp",
+      "filename": "kanhav-industries-ceo.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/kanhav-industries-ceo.webp",
+      "size_bytes": 15424,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/railways-1536x1024.webp",
+      "filename": "railways-1536x1024.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/railways-1536x1024.webp",
+      "size_bytes": 193994,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/testimonials-2.webp",
+      "filename": "testimonials-2.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/testimonials-2.webp",
+      "size_bytes": 10866,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/multiaxial-fabric-1024x683.webp",
+      "filename": "multiaxial-fabric-1024x683.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/multiaxial-fabric-1024x683.webp",
+      "size_bytes": 60360,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/our-presence-section-background.webp",
+      "filename": "our-presence-section-background.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/our-presence-section-background.webp",
+      "size_bytes": 77972,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/construction-200x133.webp",
+      "filename": "construction-200x133.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/construction-200x133.webp",
+      "size_bytes": 8364,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/banner-boat-300x169.webp",
+      "filename": "banner-boat-300x169.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/banner-boat-300x169.webp",
+      "size_bytes": 13480,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/geometrical-graphics.svg",
+      "filename": "geometrical-graphics.svg",
+      "category": "svg",
+      "local_path": "scraped_data/assets/svgs/geometrical-graphics.svg",
+      "size_bytes": 1255,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/testimonials-2-150x150.webp",
+      "filename": "testimonials-2-150x150.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/testimonials-2-150x150.webp",
+      "size_bytes": 3380,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/wind-mills-background-300x169.webp",
+      "filename": "wind-mills-background-300x169.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/wind-mills-background-300x169.webp",
+      "size_bytes": 8138,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/banner-train-1024x576.webp",
+      "filename": "banner-train-1024x576.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/banner-train-1024x576.webp",
+      "size_bytes": 135526,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/boats-300x196.webp",
+      "filename": "boats-300x196.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/boats-300x196.webp",
+      "size_bytes": 20280,
+      "status": "already_downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/litespeed/css/59233220fd52fa9ce75ca2ed97e63313.css",
+      "filename": "59233220fd52fa9ce75ca2ed97e63313.css",
+      "category": "css",
+      "local_path": "scraped_data/assets/css/59233220fd52fa9ce75ca2ed97e63313.css",
+      "size_bytes": 1397355,
+      "status": "already_downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/why-choose-us-background.webp",
+      "filename": "why-choose-us-background.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/why-choose-us-background.webp",
+      "size_bytes": 26364,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/textile-solutions-banner-1362x763.webp",
+      "filename": "textile-solutions-banner-1362x763.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/textile-solutions-banner-1362x763.webp",
+      "size_bytes": 136206,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/banner-train-300x169.webp",
+      "filename": "banner-train-300x169.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/banner-train-300x169.webp",
+      "size_bytes": 17666,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/truck-trailers-1024x683.webp",
+      "filename": "truck-trailers-1024x683.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/truck-trailers-1024x683.webp",
+      "size_bytes": 81922,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/about-us-page-background.webp",
+      "filename": "about-us-page-background.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/about-us-page-background.webp",
+      "size_bytes": 54762,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/litespeed/css/9423c0d8bbff37632cc03ab7aa5fa4a7.css",
+      "filename": "9423c0d8bbff37632cc03ab7aa5fa4a7.css",
+      "category": "css",
+      "local_path": "scraped_data/assets/css/9423c0d8bbff37632cc03ab7aa5fa4a7.css",
+      "size_bytes": 1426726,
+      "status": "already_downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/09/favicon-200x200.png",
+      "filename": "favicon-200x200.png",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/favicon-200x200.png",
+      "size_bytes": 24317,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/pipes-1536x1024.webp",
+      "filename": "pipes-1536x1024.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/pipes-1536x1024.webp",
+      "size_bytes": 48318,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/construction.webp",
+      "filename": "construction.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/construction.webp",
+      "size_bytes": 317136,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/railways-200x133.webp",
+      "filename": "railways-200x133.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/railways-200x133.webp",
+      "size_bytes": 7354,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/boats-1536x1002.webp",
+      "filename": "boats-1536x1002.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/boats-1536x1002.webp",
+      "size_bytes": 247822,
+      "status": "already_downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/truck-trailers-150x150.webp",
+      "filename": "truck-trailers-150x150.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/truck-trailers-150x150.webp",
+      "size_bytes": 7382,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/windmill-blades-300x200.webp",
+      "filename": "windmill-blades-300x200.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/windmill-blades-300x200.webp",
+      "size_bytes": 5364,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/banner-train-1366x768.webp",
+      "filename": "banner-train-1366x768.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/banner-train-1366x768.webp",
+      "size_bytes": 219194,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/kanhav-industries-ceo-1-150x150.webp",
+      "filename": "kanhav-industries-ceo-1-150x150.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/kanhav-industries-ceo-1-150x150.webp",
+      "size_bytes": 5464,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/india-map-150x150.webp",
+      "filename": "india-map-150x150.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/india-map-150x150.webp",
+      "size_bytes": 5434,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/product-applications-section-background-200x113.webp",
+      "filename": "product-applications-section-background-200x113.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/product-applications-section-background-200x113.webp",
+      "size_bytes": 2214,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/auto.webp",
+      "filename": "auto.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/auto.webp",
+      "size_bytes": 58968,
+      "status": "already_downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/skis-1-1024x683.webp",
+      "filename": "skis-1-1024x683.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/skis-1-1024x683.webp",
+      "size_bytes": 120688,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/tri-axial-fabric-300x200.webp",
+      "filename": "tri-axial-fabric-300x200.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/tri-axial-fabric-300x200.webp",
+      "size_bytes": 18470,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/windmill-blades.webp",
+      "filename": "windmill-blades.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/windmill-blades.webp",
+      "size_bytes": 129712,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/pipes-300x200.webp",
+      "filename": "pipes-300x200.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/pipes-300x200.webp",
+      "size_bytes": 7082,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/pipes-200x133.webp",
+      "filename": "pipes-200x133.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/pipes-200x133.webp",
+      "size_bytes": 4410,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/biaxial-fabric-200x133.webp",
+      "filename": "biaxial-fabric-200x133.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/biaxial-fabric-200x133.webp",
+      "size_bytes": 10538,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/tri-axial-fabric.webp",
+      "filename": "tri-axial-fabric.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/tri-axial-fabric.webp",
+      "size_bytes": 104782,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/testimonials-1-300x300.webp",
+      "filename": "testimonials-1-300x300.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/testimonials-1-300x300.webp",
+      "size_bytes": 11454,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/sports-equipment.webp",
+      "filename": "sports-equipment.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/sports-equipment.webp",
+      "size_bytes": 107600,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/railways-150x150.webp",
+      "filename": "railways-150x150.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/railways-150x150.webp",
+      "size_bytes": 6884,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/truck-trailers-300x200.webp",
+      "filename": "truck-trailers-300x200.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/truck-trailers-300x200.webp",
+      "size_bytes": 16256,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/construction-768x512.webp",
+      "filename": "construction-768x512.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/construction-768x512.webp",
+      "size_bytes": 72880,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/testimonials-3-300x300.webp",
+      "filename": "testimonials-3-300x300.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/testimonials-3-300x300.webp",
+      "size_bytes": 8138,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/biaxial-fabric-1024x683.webp",
+      "filename": "biaxial-fabric-1024x683.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/biaxial-fabric-1024x683.webp",
+      "size_bytes": 98470,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/unidirectional-fabric-300x200.webp",
+      "filename": "unidirectional-fabric-300x200.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/unidirectional-fabric-300x200.webp",
+      "size_bytes": 12712,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/testimonials-3-150x150.webp",
+      "filename": "testimonials-3-150x150.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/testimonials-3-150x150.webp",
+      "size_bytes": 3524,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/biaxial-fabric-150x150.webp",
+      "filename": "biaxial-fabric-150x150.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/biaxial-fabric-150x150.webp",
+      "size_bytes": 9100,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/sports-equipment-150x150.webp",
+      "filename": "sports-equipment-150x150.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/sports-equipment-150x150.webp",
+      "size_bytes": 9204,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/09/favicon.png",
+      "filename": "favicon.png",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/favicon.png",
+      "size_bytes": 49511,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/home-about-us-section-image.webp",
+      "filename": "home-about-us-section-image.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/home-about-us-section-image.webp",
+      "size_bytes": 36926,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/windmill-blades-1024x683.webp",
+      "filename": "windmill-blades-1024x683.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/windmill-blades-1024x683.webp",
+      "size_bytes": 38020,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/mission-vision-background.webp",
+      "filename": "mission-vision-background.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/mission-vision-background.webp",
+      "size_bytes": 348048,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/ceo-message-background-1024x576.webp",
+      "filename": "ceo-message-background-1024x576.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/ceo-message-background-1024x576.webp",
+      "size_bytes": 3150,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/multiaxial-fabric-200x133.webp",
+      "filename": "multiaxial-fabric-200x133.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/multiaxial-fabric-200x133.webp",
+      "size_bytes": 5338,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/testimonials-1-150x150.webp",
+      "filename": "testimonials-1-150x150.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/testimonials-1-150x150.webp",
+      "size_bytes": 4632,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/wind-millls-786x1024.jpg",
+      "filename": "wind-millls-786x1024.jpg",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/wind-millls-786x1024.jpg",
+      "size_bytes": 102138,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/biaxial-fabric-300x200.webp",
+      "filename": "biaxial-fabric-300x200.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/biaxial-fabric-300x200.webp",
+      "size_bytes": 20312,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/textile-solutions-banner.webp",
+      "filename": "textile-solutions-banner.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/textile-solutions-banner.webp",
+      "size_bytes": 123486,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/09/about-us-company-image.webp",
+      "filename": "about-us-company-image.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/about-us-company-image.webp",
+      "size_bytes": 58354,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/banner-boat-1366x768.webp",
+      "filename": "banner-boat-1366x768.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/banner-boat-1366x768.webp",
+      "size_bytes": 165452,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/pipes.webp",
+      "filename": "pipes.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/pipes.webp",
+      "size_bytes": 56108,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/combination-matt-1024x683.webp",
+      "filename": "combination-matt-1024x683.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/combination-matt-1024x683.webp",
+      "size_bytes": 100030,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/ceo-message-background.webp",
+      "filename": "ceo-message-background.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/ceo-message-background.webp",
+      "size_bytes": 4166,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/about-us-page-background-1024x683.webp",
+      "filename": "about-us-page-background-1024x683.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/about-us-page-background-1024x683.webp",
+      "size_bytes": 63410,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/shipping-containers-768x512.webp",
+      "filename": "shipping-containers-768x512.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/shipping-containers-768x512.webp",
+      "size_bytes": 64560,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/banner-boat-200x112.webp",
+      "filename": "banner-boat-200x112.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/banner-boat-200x112.webp",
+      "size_bytes": 6150,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/wind-mills-background.webp",
+      "filename": "wind-mills-background.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/wind-mills-background.webp",
+      "size_bytes": 93482,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/depicter/css/1.css",
+      "filename": "1.css",
+      "category": "css",
+      "local_path": "scraped_data/assets/css/1.css",
+      "size_bytes": 4656,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/india-map-267x300.webp",
+      "filename": "india-map-267x300.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/india-map-267x300.webp",
+      "size_bytes": 11998,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/textile-solutions-banner-1024x574.webp",
+      "filename": "textile-solutions-banner-1024x574.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/textile-solutions-banner-1024x574.webp",
+      "size_bytes": 89914,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/unidirectional-fabric.webp",
+      "filename": "unidirectional-fabric.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/unidirectional-fabric.webp",
+      "size_bytes": 52850,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/boats-1024x668.webp",
+      "filename": "boats-1024x668.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/boats-1024x668.webp",
+      "size_bytes": 137390,
+      "status": "already_downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/logo-website.png",
+      "filename": "logo-website.png",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/logo-website.png",
+      "size_bytes": 71775,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/shipping-containers-150x150.webp",
+      "filename": "shipping-containers-150x150.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/shipping-containers-150x150.webp",
+      "size_bytes": 6102,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/litespeed/css/cf44e8560ac4441b15af50b30b32a083.css",
+      "filename": "cf44e8560ac4441b15af50b30b32a083.css",
+      "category": "css",
+      "local_path": "scraped_data/assets/css/cf44e8560ac4441b15af50b30b32a083.css",
+      "size_bytes": 1393636,
+      "status": "already_downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/wind-millls.jpg",
+      "filename": "wind-millls.jpg",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/wind-millls.jpg",
+      "size_bytes": 1064986,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/logo-website-300x88.png",
+      "filename": "logo-website-300x88.png",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/logo-website-300x88.png",
+      "size_bytes": 28924,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/windmill-blades-768x512.webp",
+      "filename": "windmill-blades-768x512.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/windmill-blades-768x512.webp",
+      "size_bytes": 22504,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/logo-white-text.webp",
+      "filename": "logo-white-text.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/logo-white-text.webp",
+      "size_bytes": 37102,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/shipping-containers-200x133.webp",
+      "filename": "shipping-containers-200x133.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/shipping-containers-200x133.webp",
+      "size_bytes": 6774,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/our-presence-section-background-1024x683.webp",
+      "filename": "our-presence-section-background-1024x683.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/our-presence-section-background-1024x683.webp",
+      "size_bytes": 56580,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/windmill-blades-200x133.webp",
+      "filename": "windmill-blades-200x133.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/windmill-blades-200x133.webp",
+      "size_bytes": 3174,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/knitting-capacity-background-1024x576.webp",
+      "filename": "knitting-capacity-background-1024x576.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/knitting-capacity-background-1024x576.webp",
+      "size_bytes": 135694,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/mission-vision-background-150x150.webp",
+      "filename": "mission-vision-background-150x150.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/mission-vision-background-150x150.webp",
+      "size_bytes": 9530,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/ceo-message-background-768x432.webp",
+      "filename": "ceo-message-background-768x432.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/ceo-message-background-768x432.webp",
+      "size_bytes": 2092,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/banner-boat-1024x576.webp",
+      "filename": "banner-boat-1024x576.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/banner-boat-1024x576.webp",
+      "size_bytes": 110846,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/our-presence-section-background-150x150.webp",
+      "filename": "our-presence-section-background-150x150.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/our-presence-section-background-150x150.webp",
+      "size_bytes": 2488,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/logo-website-768x226.png",
+      "filename": "logo-website-768x226.png",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/logo-website-768x226.png",
+      "size_bytes": 121640,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/combination-matt-150x150.webp",
+      "filename": "combination-matt-150x150.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/combination-matt-150x150.webp",
+      "size_bytes": 6158,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/section-divider.svg",
+      "filename": "section-divider.svg",
+      "category": "svg",
+      "local_path": "scraped_data/assets/svgs/section-divider.svg",
+      "size_bytes": 1626,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/unidirectional-fabric-768x512.webp",
+      "filename": "unidirectional-fabric-768x512.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/unidirectional-fabric-768x512.webp",
+      "size_bytes": 40220,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/mission-vision-background-300x169.webp",
+      "filename": "mission-vision-background-300x169.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/mission-vision-background-300x169.webp",
+      "size_bytes": 21384,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/tri-axial-fabric-1024x683.webp",
+      "filename": "tri-axial-fabric-1024x683.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/tri-axial-fabric-1024x683.webp",
+      "size_bytes": 113730,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/our-presence-section-background-200x133.webp",
+      "filename": "our-presence-section-background-200x133.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/our-presence-section-background-200x133.webp",
+      "size_bytes": 3050,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/logo-website-1024x302.png",
+      "filename": "logo-website-1024x302.png",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/logo-website-1024x302.png",
+      "size_bytes": 192393,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/banner-boat-768x432.webp",
+      "filename": "banner-boat-768x432.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/banner-boat-768x432.webp",
+      "size_bytes": 69668,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/09/favicon-300x300.png",
+      "filename": "favicon-300x300.png",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/favicon-300x300.png",
+      "size_bytes": 46362,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/stich-Matt-768x512.webp",
+      "filename": "stich-Matt-768x512.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/stich-Matt-768x512.webp",
+      "size_bytes": 38848,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/skis-1-300x200.webp",
+      "filename": "skis-1-300x200.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/skis-1-300x200.webp",
+      "size_bytes": 15598,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/our-presence-section-background-300x200.webp",
+      "filename": "our-presence-section-background-300x200.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/our-presence-section-background-300x200.webp",
+      "size_bytes": 6054,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/logo-white-text-768x219.webp",
+      "filename": "logo-white-text-768x219.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/logo-white-text-768x219.webp",
+      "size_bytes": 25938,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/auto-768x512.webp",
+      "filename": "auto-768x512.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/auto-768x512.webp",
+      "size_bytes": 21546,
+      "status": "already_downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/railways-1024x683.webp",
+      "filename": "railways-1024x683.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/railways-1024x683.webp",
+      "size_bytes": 107554,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/boats.webp",
+      "filename": "boats.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/boats.webp",
+      "size_bytes": 330064,
+      "status": "already_downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/home-about-us-section-image-200x198.webp",
+      "filename": "home-about-us-section-image-200x198.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/home-about-us-section-image-200x198.webp",
+      "size_bytes": 8476,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/skis-1-768x512.webp",
+      "filename": "skis-1-768x512.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/skis-1-768x512.webp",
+      "size_bytes": 74922,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/logo-white-text-200x57.webp",
+      "filename": "logo-white-text-200x57.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/logo-white-text-200x57.webp",
+      "size_bytes": 4756,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/kanhav-industries-ceo-1-196x300.webp",
+      "filename": "kanhav-industries-ceo-1-196x300.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/kanhav-industries-ceo-1-196x300.webp",
+      "size_bytes": 9640,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/knitting-capacity-background-150x150.webp",
+      "filename": "knitting-capacity-background-150x150.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/knitting-capacity-background-150x150.webp",
+      "size_bytes": 6458,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/why-choose-us-background-200x133.webp",
+      "filename": "why-choose-us-background-200x133.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/why-choose-us-background-200x133.webp",
+      "size_bytes": 4648,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/wind-mills-background-1366x768.webp",
+      "filename": "wind-mills-background-1366x768.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/wind-mills-background-1366x768.webp",
+      "size_bytes": 98130,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/truck-trailers-1536x1024.webp",
+      "filename": "truck-trailers-1536x1024.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/truck-trailers-1536x1024.webp",
+      "size_bytes": 130202,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/banner-train-150x150.webp",
+      "filename": "banner-train-150x150.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/banner-train-150x150.webp",
+      "size_bytes": 9124,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/mission-vision-background-768x432.webp",
+      "filename": "mission-vision-background-768x432.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/mission-vision-background-768x432.webp",
+      "size_bytes": 123872,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/truck-trailers-200x133.webp",
+      "filename": "truck-trailers-200x133.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/truck-trailers-200x133.webp",
+      "size_bytes": 9152,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/stich-Matt-300x200.webp",
+      "filename": "stich-Matt-300x200.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/stich-Matt-300x200.webp",
+      "size_bytes": 11518,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/construction-150x150.webp",
+      "filename": "construction-150x150.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/construction-150x150.webp",
+      "size_bytes": 8878,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/sports-equipment-200x133.webp",
+      "filename": "sports-equipment-200x133.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/sports-equipment-200x133.webp",
+      "size_bytes": 9542,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/litespeed/css/e5cb35afecb870198dc15327ae3d8265.css",
+      "filename": "e5cb35afecb870198dc15327ae3d8265.css",
+      "category": "css",
+      "local_path": "scraped_data/assets/css/e5cb35afecb870198dc15327ae3d8265.css",
+      "size_bytes": 1159520,
+      "status": "already_downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/qudra-axial-fabric-200x133.webp",
+      "filename": "qudra-axial-fabric-200x133.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/qudra-axial-fabric-200x133.webp",
+      "size_bytes": 4996,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/banner-train.webp",
+      "filename": "banner-train.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/banner-train.webp",
+      "size_bytes": 189566,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/biaxial-fabric-768x512.webp",
+      "filename": "biaxial-fabric-768x512.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/biaxial-fabric-768x512.webp",
+      "size_bytes": 69144,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/truck-trailers-768x512.webp",
+      "filename": "truck-trailers-768x512.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/truck-trailers-768x512.webp",
+      "size_bytes": 57176,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/boats-150x150.webp",
+      "filename": "boats-150x150.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/boats-150x150.webp",
+      "size_bytes": 9076,
+      "status": "already_downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/skis-768x512.webp",
+      "filename": "skis-768x512.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/skis-768x512.webp",
+      "size_bytes": 37138,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/ceo-message-background-150x150.webp",
+      "filename": "ceo-message-background-150x150.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/ceo-message-background-150x150.webp",
+      "size_bytes": 398,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/09/about-us-company-image-250x300.webp",
+      "filename": "about-us-company-image-250x300.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/about-us-company-image-250x300.webp",
+      "size_bytes": 13838,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/auto-1024x683.webp",
+      "filename": "auto-1024x683.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/auto-1024x683.webp",
+      "size_bytes": 30720,
+      "status": "already_downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/litespeed/css/9af5d3bc79e76c19294d5d679918eba6.css",
+      "filename": "9af5d3bc79e76c19294d5d679918eba6.css",
+      "category": "css",
+      "local_path": "scraped_data/assets/css/9af5d3bc79e76c19294d5d679918eba6.css",
+      "size_bytes": 1406067,
+      "status": "already_downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/multiaxial-fabric-768x512.webp",
+      "filename": "multiaxial-fabric-768x512.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/multiaxial-fabric-768x512.webp",
+      "size_bytes": 42344,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/stich-Matt-1024x683.webp",
+      "filename": "stich-Matt-1024x683.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/stich-Matt-1024x683.webp",
+      "size_bytes": 52964,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/unidirectional-fabric-150x150.webp",
+      "filename": "unidirectional-fabric-150x150.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/unidirectional-fabric-150x150.webp",
+      "size_bytes": 5802,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/kanhav-industries-ceo-238x300.webp",
+      "filename": "kanhav-industries-ceo-238x300.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/kanhav-industries-ceo-238x300.webp",
+      "size_bytes": 8190,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/textile-solutions-banner-768x430.webp",
+      "filename": "textile-solutions-banner-768x430.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/textile-solutions-banner-768x430.webp",
+      "size_bytes": 61110,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/qudra-axial-fabric-150x150.webp",
+      "filename": "qudra-axial-fabric-150x150.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/qudra-axial-fabric-150x150.webp",
+      "size_bytes": 4230,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/auto-300x200.webp",
+      "filename": "auto-300x200.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/auto-300x200.webp",
+      "size_bytes": 7196,
+      "status": "already_downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/logo-white-text-1024x292.webp",
+      "filename": "logo-white-text-1024x292.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/logo-white-text-1024x292.webp",
+      "size_bytes": 38160,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/textile-solutions-banner-150x150.webp",
+      "filename": "textile-solutions-banner-150x150.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/textile-solutions-banner-150x150.webp",
+      "size_bytes": 8552,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/product-applications-section-background.webp",
+      "filename": "product-applications-section-background.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/product-applications-section-background.webp",
+      "size_bytes": 10016,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/product-applications-section-background-300x169.webp",
+      "filename": "product-applications-section-background-300x169.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/product-applications-section-background-300x169.webp",
+      "size_bytes": 3104,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/kanhav-industries-ceo-200x252.webp",
+      "filename": "kanhav-industries-ceo-200x252.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/kanhav-industries-ceo-200x252.webp",
+      "size_bytes": 6608,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/product-applications-section-background-1024x576.webp",
+      "filename": "product-applications-section-background-1024x576.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/product-applications-section-background-1024x576.webp",
+      "size_bytes": 11016,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/mission-vision-background-1024x576.webp",
+      "filename": "mission-vision-background-1024x576.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/mission-vision-background-1024x576.webp",
+      "size_bytes": 210554,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/07/shipping-containers.webp",
+      "filename": "shipping-containers.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/shipping-containers.webp",
+      "size_bytes": 274340,
+      "status": "downloaded"
+    },
+    {
+      "url": "https://kanhavgroup.com/wp-content/uploads/2024/08/biaxial-fabric.webp",
+      "filename": "biaxial-fabric.webp",
+      "category": "image",
+      "local_path": "scraped_data/assets/images/biaxial-fabric.webp",
+      "size_bytes": 94914,
+      "status": "downloaded"
+    }
+  ]
+}
