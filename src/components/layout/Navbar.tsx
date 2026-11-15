@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
@@ -16,6 +16,35 @@ export const Navbar: React.FC = () => {
 
   const pathname = usePathname();
   const { openRFQ } = useRFQ();
+
+  // Close mobile drawer on route changes
+  useEffect(() => {
+    setMobileMenuOpen(false);
+    setAboutDropdownOpen(false);
+  }, [pathname]);
+
+  // Lock body scroll when mobile menu is open
+  useEffect(() => {
+    if (mobileMenuOpen) {
+      const originalOverflow = document.body.style.overflow;
+      document.body.style.overflow = "hidden";
+      return () => {
+        document.body.style.overflow = originalOverflow;
+      };
+    }
+  }, [mobileMenuOpen]);
+
+  // Close dropdown on Escape key
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        setAboutDropdownOpen(false);
+        setMobileMenuOpen(false);
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, []);
 
   const handleMouseEnterAbout = () => {
     if (dropdownTimeoutRef.current) {
@@ -238,8 +267,9 @@ export const Navbar: React.FC = () => {
             {/* Mobile Menu Button */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="lg:hidden p-1.5 text-black hover:text-[#cc410f]"
-              aria-label="Toggle Menu"
+              className="lg:hidden p-2 -mr-1 text-black hover:text-[#cc410f] min-w-[44px] min-h-[44px] flex items-center justify-center rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-[#cc410f]"
+              aria-label={mobileMenuOpen ? "Close navigation menu" : "Open navigation menu"}
+              aria-expanded={mobileMenuOpen}
             >
               {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
@@ -249,17 +279,17 @@ export const Navbar: React.FC = () => {
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="fixed inset-0 top-[57px] z-40 bg-[#ece8e1] border-b border-black/10 flex flex-col justify-between p-6 lg:hidden overflow-y-auto">
-          <div className="flex flex-col gap-4">
+        <div className="fixed inset-0 top-[57px] z-40 bg-[#ece8e1] border-b border-black/10 flex flex-col justify-between p-6 lg:hidden overflow-y-auto overscroll-contain h-[calc(100dvh-57px)]">
+          <div className="flex flex-col gap-2">
             {/* 1. Home */}
             <Link
               href="/"
               onClick={() => setMobileMenuOpen(false)}
-              className={`text-xl font-bold uppercase tracking-wider flex items-center ${
+              className={`min-h-[48px] px-2 py-2 text-xl font-bold uppercase tracking-wider flex items-center rounded active:bg-black/5 transition-colors ${
                 pathname === "/" ? "text-black" : "text-black/70 hover:text-black"
               }`}
             >
-              {pathname === "/" && <span className="inline-block w-2 h-2 bg-[#cc410f] mr-2" />}
+              {pathname === "/" && <span className="inline-block w-2 h-2 bg-[#cc410f] mr-2 shrink-0" />}
               Home
             </Link>
 
@@ -268,23 +298,24 @@ export const Navbar: React.FC = () => {
               <button
                 type="button"
                 onClick={() => setMobileAboutOpen(!mobileAboutOpen)}
-                className={`text-xl font-bold uppercase tracking-wider flex items-center justify-between text-left ${
+                className={`min-h-[48px] px-2 py-2 text-xl font-bold uppercase tracking-wider flex items-center justify-between text-left rounded active:bg-black/5 transition-colors ${
                   isAboutActive ? "text-black" : "text-black/70 hover:text-black"
                 }`}
+                aria-expanded={mobileAboutOpen}
               >
                 <div className="flex items-center">
-                  {isAboutActive && <span className="inline-block w-2 h-2 bg-[#cc410f] mr-2" />}
+                  {isAboutActive && <span className="inline-block w-2 h-2 bg-[#cc410f] mr-2 shrink-0" />}
                   <span>About Us</span>
                 </div>
                 <ChevronDown
-                  className={`w-5 h-5 text-black/60 transition-transform duration-200 ${
+                  className={`w-5 h-5 text-black/60 transition-transform duration-200 shrink-0 ${
                     mobileAboutOpen ? "rotate-180 text-[#cc410f]" : ""
                   }`}
                 />
               </button>
 
               {mobileAboutOpen && (
-                <div className="pl-4 mt-2.5 space-y-2 border-l-2 border-[#cc410f]/40">
+                <div className="pl-4 ml-2 my-1.5 space-y-1 border-l-2 border-[#cc410f]">
                   {aboutSubLinks.map((subLink) => {
                     const active = pathname === subLink.href;
                     return (
@@ -292,8 +323,8 @@ export const Navbar: React.FC = () => {
                         key={subLink.name}
                         href={subLink.href}
                         onClick={() => setMobileMenuOpen(false)}
-                        className={`block py-1.5 text-base font-semibold uppercase tracking-wider transition-colors ${
-                          active ? "text-[#cc410f]" : "text-black/60 hover:text-black"
+                        className={`block py-2.5 px-3 rounded text-base font-semibold uppercase tracking-wider transition-colors active:bg-black/5 ${
+                          active ? "text-[#cc410f] bg-black/[0.04]" : "text-black/75 hover:text-black"
                         }`}
                       >
                         {subLink.name}
@@ -308,11 +339,11 @@ export const Navbar: React.FC = () => {
             <Link
               href="/products"
               onClick={() => setMobileMenuOpen(false)}
-              className={`text-xl font-bold uppercase tracking-wider flex items-center ${
+              className={`min-h-[48px] px-2 py-2 text-xl font-bold uppercase tracking-wider flex items-center rounded active:bg-black/5 transition-colors ${
                 isLinkActive("/products") ? "text-black" : "text-black/70 hover:text-black"
               }`}
             >
-              {isLinkActive("/products") && <span className="inline-block w-2 h-2 bg-[#cc410f] mr-2" />}
+              {isLinkActive("/products") && <span className="inline-block w-2 h-2 bg-[#cc410f] mr-2 shrink-0" />}
               Products
             </Link>
 
@@ -320,11 +351,11 @@ export const Navbar: React.FC = () => {
             <Link
               href="/careers"
               onClick={() => setMobileMenuOpen(false)}
-              className={`text-xl font-bold uppercase tracking-wider flex items-center ${
+              className={`min-h-[48px] px-2 py-2 text-xl font-bold uppercase tracking-wider flex items-center rounded active:bg-black/5 transition-colors ${
                 isLinkActive("/careers") ? "text-black" : "text-black/70 hover:text-black"
               }`}
             >
-              {isLinkActive("/careers") && <span className="inline-block w-2 h-2 bg-[#cc410f] mr-2" />}
+              {isLinkActive("/careers") && <span className="inline-block w-2 h-2 bg-[#cc410f] mr-2 shrink-0" />}
               Careers
             </Link>
 
@@ -332,18 +363,18 @@ export const Navbar: React.FC = () => {
             <Link
               href="/contact-us"
               onClick={() => setMobileMenuOpen(false)}
-              className={`text-xl font-bold uppercase tracking-wider flex items-center ${
+              className={`min-h-[48px] px-2 py-2 text-xl font-bold uppercase tracking-wider flex items-center rounded active:bg-black/5 transition-colors ${
                 isLinkActive("/contact-us") ? "text-black" : "text-black/70 hover:text-black"
               }`}
             >
-              {isLinkActive("/contact-us") && <span className="inline-block w-2 h-2 bg-[#cc410f] mr-2" />}
+              {isLinkActive("/contact-us") && <span className="inline-block w-2 h-2 bg-[#cc410f] mr-2 shrink-0" />}
               Contact Us
             </Link>
           </div>
 
           <div className="pt-6 border-t border-black/10 flex flex-col gap-3 font-mono text-xs mt-6">
             <span className="text-black/50 uppercase">SALES DESK</span>
-            <a href={`tel:${KANHAV_DATA.contact.phone}`} className="text-[#cc410f] font-bold text-sm">
+            <a href={`tel:${KANHAV_DATA.contact.phone.replace(/\s+/g, "")}`} className="text-[#cc410f] font-bold text-sm min-h-[36px] flex items-center">
               {KANHAV_DATA.contact.phone}
             </a>
             <button
@@ -351,7 +382,7 @@ export const Navbar: React.FC = () => {
                 setMobileMenuOpen(false);
                 openRFQ();
               }}
-              className="mt-2 w-full bg-black text-white py-3 font-mono text-xs uppercase font-bold tracking-wider [clip-path:polygon(0_0,calc(100%-8px)_0,100%_8px,100%_100%,0_100%)]"
+              className="mt-2 w-full bg-black text-white py-3.5 min-h-[48px] font-mono text-xs uppercase font-bold tracking-wider [clip-path:polygon(0_0,calc(100%-8px)_0,100%_8px,100%_100%,0_100%)] active:bg-neutral-800"
             >
               Get started
             </button>

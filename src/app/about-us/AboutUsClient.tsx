@@ -28,10 +28,10 @@ export default function AboutUsClient() {
             <span className="w-1.5 h-1.5 bg-kraft-orange" />
             <span>Corporate Profile</span>
           </div>
-          <h1 className="font-display text-5xl sm:text-7xl lg:text-8xl text-kraft-headline tracking-tight uppercase leading-[0.95]">
+          <h1 className="font-display text-4xl xs:text-5xl sm:text-7xl lg:text-8xl text-kraft-headline tracking-tight uppercase leading-[0.95]">
             ABOUT KANHAV INDUSTRIES
           </h1>
-          <p className="text-base sm:text-xl text-kraft-cream max-w-3xl leading-relaxed">
+          <p className="text-sm sm:text-xl text-kraft-cream max-w-3xl leading-relaxed">
             At Kanhav Industries Private Limited, we pride ourselves on being a leading force in the textile industry, specializing in warp-knitted textiles and nylon FDY yarns. As a key subsidiary of the Kanhav Group, established in 2011, we bring a rich heritage of innovation, quality, and excellence to every product we create.
           </p>
         </motion.div>
@@ -39,7 +39,7 @@ export default function AboutUsClient() {
 
       {/* Group Metrics Grid */}
       <section className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 mb-10 sm:mb-14">
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-3 sm:gap-4">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 sm:gap-4">
           {[
             { val: "19 M", label: "Annual Turnover", sub: "USD ($) Kanhav Group" },
             { val: "2000 T", label: "Production Capacity", sub: "Annual Metric Tonnes" },
@@ -53,7 +53,9 @@ export default function AboutUsClient() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: idx * 0.06 }}
-              className="bg-white p-5 sm:p-6 rounded-xl border border-black/[0.08] shadow-sm text-center"
+              className={`bg-white p-4 sm:p-6 rounded-xl border border-black/[0.08] shadow-sm text-center ${
+                idx === 4 ? "col-span-2 sm:col-span-1" : ""
+              }`}
             >
               <div className="font-display text-3xl sm:text-4xl lg:text-5xl text-kraft-headline tracking-wide">
                 {item.val}
@@ -110,7 +112,7 @@ export default function AboutUsClient() {
 
       {/* Subpage Link: Our Story & Heritage */}
       <section className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 mb-12 sm:mb-16">
-        <div className="bg-[#14120f] text-white p-8 sm:p-10 rounded-2xl border border-white/10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6 relative overflow-hidden [clip-path:polygon(0_0,calc(100%-16px)_0,100%_16px,100%_100%,0_100%)] shadow-lg">
+        <div className="bg-[#14120f] text-white p-6 sm:p-10 rounded-2xl border border-white/10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6 relative overflow-hidden [clip-path:polygon(0_0,calc(100%-16px)_0,100%_16px,100%_100%,0_100%)] shadow-lg">
           <div className="space-y-2 max-w-2xl relative z-10">
             <span className="font-mono text-[11px] text-[#cc410f] uppercase tracking-wider font-bold">
               Company Evolution
@@ -125,7 +127,7 @@ export default function AboutUsClient() {
 
           <Link
             href="/about-us/our-story"
-            className="inline-flex items-center gap-2 px-6 py-3.5 bg-[#cc410f] hover:bg-[#e04812] text-white font-mono text-xs uppercase font-bold tracking-wider transition-colors shrink-0 [clip-path:polygon(0_0,100%_0,100%_calc(100%-8px),calc(100%-8px)_100%,0_100%)] shadow-md"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 min-h-[46px] bg-[#cc410f] hover:bg-[#e04812] text-white font-mono text-xs uppercase font-bold tracking-wider transition-colors shrink-0 [clip-path:polygon(0_0,100%_0,100%_calc(100%-8px),calc(100%-8px)_100%,0_100%)] shadow-md text-center"
           >
             <span>Read Our Story</span>
             <ArrowRight className="w-4 h-4" />
@@ -144,21 +146,21 @@ export default function AboutUsClient() {
 
       {/* Bottom CTA */}
       <section className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 my-12 sm:my-16 text-center">
-        <div className="bg-white p-10 sm:p-14 rounded-3xl border border-black/[0.08] shadow-sm relative overflow-hidden">
+        <div className="bg-white p-6 sm:p-10 lg:p-14 rounded-2xl sm:rounded-3xl border border-black/[0.08] shadow-sm relative overflow-hidden">
           <div className="max-w-2xl mx-auto space-y-4 relative z-10">
             <span className="font-mono text-xs uppercase tracking-widest text-kraft-orange font-semibold">
               Partner With Kanhav
             </span>
-            <h2 className="text-3xl sm:text-4xl font-bold text-kraft-headline">
+            <h2 className="text-2xl sm:text-4xl font-bold text-kraft-headline">
               Ready to Discuss Your Technical Fabric Specifications?
             </h2>
-            <p className="text-sm sm:text-base text-kraft-cream leading-relaxed">
+            <p className="text-xs sm:text-base text-kraft-cream leading-relaxed">
               Our engineering team in Surat will review your tensile, weight, resin infusion, and volume requirements.
             </p>
             <div className="pt-4 flex flex-wrap justify-center gap-4">
               <button
                 onClick={() => openRFQ()}
-                className="px-8 py-3.5 rounded-full bg-kraft-orange hover:bg-kraft-orange-hover text-white font-mono text-xs font-bold uppercase tracking-wider shadow-sm transition-all"
+                className="w-full sm:w-auto min-h-[48px] px-8 py-3.5 rounded-full bg-kraft-orange hover:bg-kraft-orange-hover active:bg-[#a8340a] text-white font-mono text-xs font-bold uppercase tracking-wider shadow-sm transition-all flex items-center justify-center"
               >
                 Request a Technical Quote
               </button>

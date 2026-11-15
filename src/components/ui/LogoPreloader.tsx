@@ -92,8 +92,8 @@ export default function LogoPreloader({
         ...style,
         position: "fixed",
         inset: 0,
-        width: "100vw",
-        height: "100vh",
+        width: "100%",
+        height: "100dvh",
         backgroundColor,
         display: "flex",
         alignItems: "center",
@@ -119,7 +119,9 @@ export default function LogoPreloader({
           willChange: "transform, opacity",
           userSelect: "none",
           zIndex: 1,
-          padding: "20px",
+          padding: "1.5rem",
+          width: "100%",
+          maxWidth: "400px",
         }}
       >
         <img
@@ -127,7 +129,7 @@ export default function LogoPreloader({
           alt={logo.alt || "Kanhav Group Logo"}
           style={{
             width: "100%",
-            maxWidth: `${logoWidth}px`,
+            maxWidth: `min(${logoWidth}px, 76vw)`,
             height: "auto",
             maxHeight: "140px",
             objectFit: "contain",

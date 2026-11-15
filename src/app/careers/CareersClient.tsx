@@ -20,7 +20,7 @@ export default function CareersClient() {
             <span className="w-1.5 h-1.5 bg-kraft-orange" />
             <span>Opportunities</span>
           </div>
-          <h1 className="font-display text-5xl sm:text-7xl lg:text-8xl text-kraft-headline tracking-tight uppercase leading-[0.95]">
+          <h1 className="font-display text-4xl xs:text-5xl sm:text-7xl lg:text-8xl text-kraft-headline tracking-tight uppercase leading-[0.95]">
             CAREERS AT KANHAV
           </h1>
           <p className="text-base sm:text-xl text-kraft-cream max-w-3xl leading-relaxed">

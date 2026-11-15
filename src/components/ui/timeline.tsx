@@ -240,7 +240,7 @@ export default function Timeline({
         trigger: section,
         start: "top top",
         end: slideEnd,
-        scrub: true,
+        scrub: isMobile ? 0.8 : true,
       },
       defaults: {
         ease: "none",
@@ -265,7 +265,7 @@ export default function Timeline({
         trigger: section,
         start: lineStart,
         end: lineEnd,
-        scrub: true,
+        scrub: isMobile ? 0.8 : true,
       },
     });
   }, { dependencies: [reducedMotion], scope: sectionRef });
@@ -335,12 +335,14 @@ export default function Timeline({
         gsap.set(lineSelector, { transformOrigin: "top top" });
       }
 
+      const isMobile = typeof window !== "undefined" && window.innerWidth < 600;
+
       const timeline = gsap.timeline({
         scrollTrigger: {
           trigger: section,
           start: `${startPos}% 30%`,
           end: `${endPos}% 50%`,
-          scrub: true,
+          scrub: isMobile ? 0.8 : true,
         },
       });
 

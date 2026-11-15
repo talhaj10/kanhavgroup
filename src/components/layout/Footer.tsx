@@ -69,11 +69,11 @@ export const Footer: React.FC = () => {
               </div>
 
               {/* Main Title: ENGINEERED TO SPEC. [READY] FOR PRODUCTION. */}
-              <h2 className="font-display text-4xl sm:text-6xl md:text-7xl lg:text-[76px] leading-[0.9] tracking-tight text-white uppercase select-none mb-6">
+              <h2 className="font-display text-3xl xs:text-4xl sm:text-6xl md:text-7xl lg:text-[76px] leading-[0.9] tracking-tight text-white uppercase select-none mb-6">
                 ENGINEERED TO SPEC.
                 <br />
-                <span className="inline-flex items-center mt-1">
-                  <span className="bg-[#14120f] text-white px-3 sm:px-4 py-0.5 sm:py-1 mr-2 inline-block font-display tracking-tight text-[0.9em]">
+                <span className="inline-flex items-center mt-1 flex-wrap">
+                  <span className="bg-[#14120f] text-white px-2.5 sm:px-4 py-0.5 sm:py-1 mr-2 inline-block font-display tracking-tight text-[0.9em]">
                     READY
                   </span>
                   <span>FOR PRODUCTION.</span>
@@ -85,17 +85,17 @@ export const Footer: React.FC = () => {
               </p>
 
               {/* Action Buttons Row */}
-              <div className="flex flex-wrap items-center gap-3.5">
+              <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
                 <button
                   onClick={() => openRFQ()}
-                  className="bg-[#ece8e1] hover:bg-white text-black font-mono text-xs font-bold tracking-wider uppercase px-6 sm:px-7 py-3.5 transition-colors shadow-md [clip-path:polygon(0_0,calc(100%-8px)_0,100%_8px,100%_100%,0_100%)]"
+                  className="bg-[#ece8e1] hover:bg-white text-black font-mono text-xs font-bold tracking-wider uppercase px-6 sm:px-7 py-3.5 transition-colors shadow-md text-center justify-center min-h-[46px] flex items-center [clip-path:polygon(0_0,calc(100%-8px)_0,100%_8px,100%_100%,0_100%)] active:scale-[0.99]"
                 >
                   Order a sample kit
                 </button>
 
                 <a
                   href={`tel:${KANHAV_DATA.contact.phone.replace(/\s+/g, "")}`}
-                  className="bg-black/90 hover:bg-black text-white font-mono text-xs font-bold tracking-wider uppercase px-6 sm:px-7 py-3.5 transition-colors [clip-path:polygon(0_0,100%_0,100%_calc(100%-8px),calc(100%-8px)_100%,0_100%)] border border-white/15 shadow-md flex items-center gap-2"
+                  className="bg-black/90 hover:bg-black text-white font-mono text-xs font-bold tracking-wider uppercase px-6 sm:px-7 py-3.5 transition-colors [clip-path:polygon(0_0,100%_0,100%_calc(100%-8px),calc(100%-8px)_100%,0_100%)] border border-white/15 shadow-md flex items-center justify-center gap-2 min-h-[46px] active:scale-[0.99]"
                 >
                   <span>Direct Hotline</span>
                   <ArrowUpRight className="w-3.5 h-3.5 text-[#cc410f]" />
@@ -203,7 +203,7 @@ export const Footer: React.FC = () => {
               <h4 className="font-mono text-xs uppercase tracking-widest text-white/50 font-bold border-b border-white/10 pb-2">
                 Navigation
               </h4>
-              <ul className="space-y-2 font-mono text-xs uppercase tracking-wider">
+              <ul className="space-y-1 font-mono text-xs uppercase tracking-wider">
                 {[
                   { name: "Home", href: "/" },
                   { name: "About Us", href: "/about-us" },
@@ -215,7 +215,7 @@ export const Footer: React.FC = () => {
                   <li key={item.name}>
                     <Link
                       href={item.href}
-                      className="text-white/70 hover:text-white transition-colors flex items-center justify-between py-1 group"
+                      className="text-white/70 hover:text-white transition-colors flex items-center justify-between py-2 group min-h-[38px]"
                     >
                       <span className="group-hover:translate-x-1 transition-transform">{item.name}</span>
                       <ArrowUpRight className="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity text-[#cc410f]" />
@@ -230,12 +230,12 @@ export const Footer: React.FC = () => {
               <h4 className="font-mono text-xs uppercase tracking-widest text-white/50 font-bold border-b border-white/10 pb-2">
                 Composite Fabrics
               </h4>
-              <ul className="space-y-1.5 text-xs">
+              <ul className="space-y-1 text-xs">
                 {KANHAV_DATA.products.map((p) => (
                   <li key={p.id}>
                     <button
                       onClick={() => openRFQ(p.slug)}
-                      className="text-left text-white/70 hover:text-white transition-colors flex items-center justify-between w-full py-1 group"
+                      className="text-left text-white/70 hover:text-white transition-colors flex items-center justify-between w-full py-2 group min-h-[38px]"
                     >
                       <span className="group-hover:translate-x-1 transition-transform line-clamp-1">{p.title}</span>
                       <span className="font-mono text-[9px] uppercase px-1.5 py-0.5 rounded bg-white/5 group-hover:bg-[#cc410f] group-hover:text-white text-white/50 transition-colors shrink-0 ml-2">

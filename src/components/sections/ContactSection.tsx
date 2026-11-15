@@ -178,7 +178,7 @@ export const ContactSection: React.FC = () => {
                     value={form.fullName}
                     onChange={(e) => setForm({ ...form, fullName: e.target.value })}
                     placeholder="e.g. Suresh Patel"
-                    className="w-full px-3.5 py-2.5 rounded-lg bg-[#f8f7f4] border border-black/15 text-[#110f0e] placeholder-black/35 text-xs focus:bg-white focus:outline-none focus:border-kraft-orange focus:ring-1 focus:ring-kraft-orange/20 transition-all"
+                    className="w-full px-3.5 py-3 rounded-lg bg-[#f8f7f4] border border-black/15 text-[#110f0e] placeholder-black/35 text-[16px] sm:text-sm focus:bg-white focus:outline-none focus:border-kraft-orange focus:ring-1 focus:ring-kraft-orange/20 transition-all"
                   />
                 </div>
                 <div>
@@ -190,7 +190,7 @@ export const ContactSection: React.FC = () => {
                     value={form.companyName}
                     onChange={(e) => setForm({ ...form, companyName: e.target.value })}
                     placeholder="e.g. Gujarat Composites Ltd"
-                    className="w-full px-3.5 py-2.5 rounded-lg bg-[#f8f7f4] border border-black/15 text-[#110f0e] placeholder-black/35 text-xs focus:bg-white focus:outline-none focus:border-kraft-orange focus:ring-1 focus:ring-kraft-orange/20 transition-all"
+                    className="w-full px-3.5 py-3 rounded-lg bg-[#f8f7f4] border border-black/15 text-[#110f0e] placeholder-black/35 text-[16px] sm:text-sm focus:bg-white focus:outline-none focus:border-kraft-orange focus:ring-1 focus:ring-kraft-orange/20 transition-all"
                   />
                 </div>
               </div>
@@ -206,7 +206,7 @@ export const ContactSection: React.FC = () => {
                     value={form.email}
                     onChange={(e) => setForm({ ...form, email: e.target.value })}
                     placeholder="suresh@gujaratcomposites.com"
-                    className="w-full px-3.5 py-2.5 rounded-lg bg-[#f8f7f4] border border-black/15 text-[#110f0e] placeholder-black/35 text-xs focus:bg-white focus:outline-none focus:border-kraft-orange focus:ring-1 focus:ring-kraft-orange/20 transition-all"
+                    className="w-full px-3.5 py-3 rounded-lg bg-[#f8f7f4] border border-black/15 text-[#110f0e] placeholder-black/35 text-[16px] sm:text-sm focus:bg-white focus:outline-none focus:border-kraft-orange focus:ring-1 focus:ring-kraft-orange/20 transition-all"
                   />
                 </div>
                 <div>
@@ -219,7 +219,7 @@ export const ContactSection: React.FC = () => {
                     value={form.phone}
                     onChange={(e) => setForm({ ...form, phone: e.target.value })}
                     placeholder="+91 98765 43210"
-                    className="w-full px-3.5 py-2.5 rounded-lg bg-[#f8f7f4] border border-black/15 text-[#110f0e] placeholder-black/35 text-xs focus:bg-white focus:outline-none focus:border-kraft-orange focus:ring-1 focus:ring-kraft-orange/20 transition-all"
+                    className="w-full px-3.5 py-3 rounded-lg bg-[#f8f7f4] border border-black/15 text-[#110f0e] placeholder-black/35 text-[16px] sm:text-sm focus:bg-white focus:outline-none focus:border-kraft-orange focus:ring-1 focus:ring-kraft-orange/20 transition-all"
                   />
                 </div>
               </div>
@@ -233,13 +233,13 @@ export const ContactSection: React.FC = () => {
                   value={form.message}
                   onChange={(e) => setForm({ ...form, message: e.target.value })}
                   placeholder="Outline your application, delivery timeline, or inquiry specifics..."
-                  className="w-full px-3.5 py-2.5 rounded-lg bg-[#f8f7f4] border border-black/15 text-[#110f0e] placeholder-black/35 text-xs focus:bg-white focus:outline-none focus:border-kraft-orange focus:ring-1 focus:ring-kraft-orange/20 transition-all resize-none"
+                  className="w-full px-3.5 py-3 rounded-lg bg-[#f8f7f4] border border-black/15 text-[#110f0e] placeholder-black/35 text-[16px] sm:text-sm focus:bg-white focus:outline-none focus:border-kraft-orange focus:ring-1 focus:ring-kraft-orange/20 transition-all resize-none"
                 />
               </div>
 
               <button
                 type="submit"
-                className="w-full py-3 rounded-full bg-kraft-orange hover:bg-kraft-orange-hover text-white font-mono uppercase tracking-wider text-xs font-semibold flex items-center justify-center gap-2 transition-all shadow-sm"
+                className="w-full min-h-[48px] py-3.5 rounded-full bg-kraft-orange hover:bg-kraft-orange-hover active:bg-[#a8340a] text-white font-mono uppercase tracking-wider text-xs sm:text-sm font-semibold flex items-center justify-center gap-2 transition-all shadow-sm"
               >
                 <span>Send Message</span>
                 <Send className="w-4 h-4" />

@@ -76,12 +76,12 @@ export const RFQModal: React.FC<RFQModalProps> = ({
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.96, y: 15 }}
             transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] }}
-            className="relative w-full max-w-xl bg-white border border-black/10 rounded-2xl p-6 sm:p-8 shadow-2xl z-10 max-h-[90vh] overflow-y-auto"
+            className="relative w-full max-w-xl bg-white border border-black/10 rounded-2xl p-5 sm:p-8 shadow-2xl z-10 max-h-[92dvh] overflow-y-auto overscroll-contain"
           >
             {/* Close Button */}
             <button
               onClick={onClose}
-              className="absolute top-5 right-5 p-2 rounded-full text-kraft-olive hover:text-[#110f0e] hover:bg-black/5 transition-colors"
+              className="absolute top-3 right-3 sm:top-5 sm:right-5 min-w-[44px] min-h-[44px] flex items-center justify-center rounded-full text-kraft-olive hover:text-[#110f0e] hover:bg-black/5 transition-colors focus:outline-none"
               aria-label="Close modal"
             >
               <X className="w-5 h-5" />
@@ -133,7 +133,7 @@ export const RFQModal: React.FC<RFQModalProps> = ({
                         value={formData.fullName}
                         onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
                         placeholder="e.g. Rajesh Kumar"
-                        className="w-full px-3.5 py-2.5 rounded-lg bg-[#f8f7f4] border border-black/15 text-[#110f0e] placeholder-black/35 text-sm focus:bg-white focus:outline-none focus:border-kraft-orange focus:ring-1 focus:ring-kraft-orange/20 transition-all"
+                        className="w-full px-3.5 py-3 rounded-lg bg-[#f8f7f4] border border-black/15 text-[#110f0e] placeholder-black/35 text-[16px] sm:text-sm focus:bg-white focus:outline-none focus:border-kraft-orange focus:ring-1 focus:ring-kraft-orange/20 transition-all"
                       />
                     </div>
                     <div>
@@ -146,7 +146,7 @@ export const RFQModal: React.FC<RFQModalProps> = ({
                         value={formData.companyName}
                         onChange={(e) => setFormData({ ...formData, companyName: e.target.value })}
                         placeholder="e.g. Apex Composites Pvt Ltd"
-                        className="w-full px-3.5 py-2.5 rounded-lg bg-[#f8f7f4] border border-black/15 text-[#110f0e] placeholder-black/35 text-sm focus:bg-white focus:outline-none focus:border-kraft-orange focus:ring-1 focus:ring-kraft-orange/20 transition-all"
+                        className="w-full px-3.5 py-3 rounded-lg bg-[#f8f7f4] border border-black/15 text-[#110f0e] placeholder-black/35 text-[16px] sm:text-sm focus:bg-white focus:outline-none focus:border-kraft-orange focus:ring-1 focus:ring-kraft-orange/20 transition-all"
                       />
                     </div>
                   </div>
@@ -162,7 +162,7 @@ export const RFQModal: React.FC<RFQModalProps> = ({
                         value={formData.email}
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                         placeholder="rajesh@company.com"
-                        className="w-full px-3.5 py-2.5 rounded-lg bg-[#f8f7f4] border border-black/15 text-[#110f0e] placeholder-black/35 text-sm focus:bg-white focus:outline-none focus:border-kraft-orange focus:ring-1 focus:ring-kraft-orange/20 transition-all"
+                        className="w-full px-3.5 py-3 rounded-lg bg-[#f8f7f4] border border-black/15 text-[#110f0e] placeholder-black/35 text-[16px] sm:text-sm focus:bg-white focus:outline-none focus:border-kraft-orange focus:ring-1 focus:ring-kraft-orange/20 transition-all"
                       />
                     </div>
                     <div>
@@ -175,7 +175,7 @@ export const RFQModal: React.FC<RFQModalProps> = ({
                         value={formData.phone}
                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                         placeholder="+91 98765 43210"
-                        className="w-full px-3.5 py-2.5 rounded-lg bg-[#f8f7f4] border border-black/15 text-[#110f0e] placeholder-black/35 text-sm focus:bg-white focus:outline-none focus:border-kraft-orange focus:ring-1 focus:ring-kraft-orange/20 transition-all"
+                        className="w-full px-3.5 py-3 rounded-lg bg-[#f8f7f4] border border-black/15 text-[#110f0e] placeholder-black/35 text-[16px] sm:text-sm focus:bg-white focus:outline-none focus:border-kraft-orange focus:ring-1 focus:ring-kraft-orange/20 transition-all"
                       />
                     </div>
                   </div>
@@ -187,7 +187,7 @@ export const RFQModal: React.FC<RFQModalProps> = ({
                     <select
                       value={formData.product}
                       onChange={(e) => setFormData({ ...formData, product: e.target.value })}
-                      className="w-full px-3.5 py-2.5 rounded-lg bg-[#f8f7f4] border border-black/15 text-[#110f0e] text-sm focus:bg-white focus:outline-none focus:border-kraft-orange focus:ring-1 focus:ring-kraft-orange/20 transition-all"
+                      className="w-full px-3.5 py-3 rounded-lg bg-[#f8f7f4] border border-black/15 text-[#110f0e] text-[16px] sm:text-sm focus:bg-white focus:outline-none focus:border-kraft-orange focus:ring-1 focus:ring-kraft-orange/20 transition-all"
                     >
                       {KANHAV_DATA.products.map((p) => (
                         <option key={p.id} value={p.title} className="bg-white text-[#110f0e]">
@@ -206,14 +206,14 @@ export const RFQModal: React.FC<RFQModalProps> = ({
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                       placeholder="Specify GSM, fiber orientation, width, estimated volume in MT, or application details..."
-                      className="w-full px-3.5 py-2.5 rounded-lg bg-[#f8f7f4] border border-black/15 text-[#110f0e] placeholder-black/35 text-sm focus:bg-white focus:outline-none focus:border-kraft-orange focus:ring-1 focus:ring-kraft-orange/20 transition-all resize-none"
+                      className="w-full px-3.5 py-3 rounded-lg bg-[#f8f7f4] border border-black/15 text-[#110f0e] placeholder-black/35 text-[16px] sm:text-sm focus:bg-white focus:outline-none focus:border-kraft-orange focus:ring-1 focus:ring-kraft-orange/20 transition-all resize-none"
                     />
                   </div>
 
                   <div className="pt-2">
                     <button
                       type="submit"
-                      className="w-full py-3 px-6 rounded-full bg-kraft-orange hover:bg-kraft-orange-hover text-white font-medium text-sm transition-all duration-200 flex items-center justify-center gap-2 shadow-sm"
+                      className="w-full min-h-[48px] py-3.5 px-6 rounded-full bg-kraft-orange hover:bg-kraft-orange-hover active:bg-[#a8340a] text-white font-medium text-sm transition-all duration-200 flex items-center justify-center gap-2 shadow-sm"
                     >
                       <span>Submit Quote Request</span>
                       <Send className="w-4 h-4" />

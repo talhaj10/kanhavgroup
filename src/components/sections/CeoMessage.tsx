@@ -10,8 +10,8 @@ export const CeoMessage: React.FC = () => {
   return (
     <section id="ceo" className="w-full py-12 sm:py-16 lg:py-20 bg-[#f0ede6] border-b border-black/[0.08]">
       <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-white p-8 sm:p-12 lg:p-16 rounded-3xl border border-black/[0.08] shadow-sm relative overflow-hidden">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+        <div className="bg-white p-5 sm:p-10 lg:p-16 rounded-2xl sm:rounded-3xl border border-black/[0.08] shadow-sm relative overflow-hidden">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-10 lg:gap-14 items-center">
           {/* CEO Photo Column (5 cols) */}
           <motion.div
             initial={{ opacity: 0, scale: 0.98 }}

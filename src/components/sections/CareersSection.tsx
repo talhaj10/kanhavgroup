@@ -83,7 +83,7 @@ export const CareersSection: React.FC = () => {
                     value={candidate.name}
                     onChange={(e) => setCandidate({ ...candidate, name: e.target.value })}
                     placeholder="e.g. Amit Sharma"
-                    className="w-full px-3.5 py-2.5 rounded-lg bg-white border border-black/15 text-[#110f0e] placeholder-black/35 text-xs focus:outline-none focus:border-kraft-orange focus:ring-1 focus:ring-kraft-orange/20 transition-all"
+                    className="w-full px-3.5 py-3 rounded-lg bg-white border border-black/15 text-[#110f0e] placeholder-black/35 text-[16px] sm:text-sm focus:outline-none focus:border-kraft-orange focus:ring-1 focus:ring-kraft-orange/20 transition-all"
                   />
                 </div>
 
@@ -97,7 +97,7 @@ export const CareersSection: React.FC = () => {
                     value={candidate.email}
                     onChange={(e) => setCandidate({ ...candidate, email: e.target.value })}
                     placeholder="amit@example.com"
-                    className="w-full px-3.5 py-2.5 rounded-lg bg-white border border-black/15 text-[#110f0e] placeholder-black/35 text-xs focus:outline-none focus:border-kraft-orange focus:ring-1 focus:ring-kraft-orange/20 transition-all"
+                    className="w-full px-3.5 py-3 rounded-lg bg-white border border-black/15 text-[#110f0e] placeholder-black/35 text-[16px] sm:text-sm focus:outline-none focus:border-kraft-orange focus:ring-1 focus:ring-kraft-orange/20 transition-all"
                   />
                 </div>
 
@@ -111,7 +111,7 @@ export const CareersSection: React.FC = () => {
                     value={candidate.role}
                     onChange={(e) => setCandidate({ ...candidate, role: e.target.value })}
                     placeholder="e.g. Textile Technologist / Quality Engineer / Operator"
-                    className="w-full px-3.5 py-2.5 rounded-lg bg-white border border-black/15 text-[#110f0e] placeholder-black/35 text-xs focus:outline-none focus:border-kraft-orange focus:ring-1 focus:ring-kraft-orange/20 transition-all"
+                    className="w-full px-3.5 py-3 rounded-lg bg-white border border-black/15 text-[#110f0e] placeholder-black/35 text-[16px] sm:text-sm focus:outline-none focus:border-kraft-orange focus:ring-1 focus:ring-kraft-orange/20 transition-all"
                   />
                 </div>
 
@@ -124,13 +124,13 @@ export const CareersSection: React.FC = () => {
                     value={candidate.resume}
                     onChange={(e) => setCandidate({ ...candidate, resume: e.target.value })}
                     placeholder="Paste link to resume / portfolio or outline key experience..."
-                    className="w-full px-3.5 py-2.5 rounded-lg bg-white border border-black/15 text-[#110f0e] placeholder-black/35 text-xs focus:outline-none focus:border-kraft-orange focus:ring-1 focus:ring-kraft-orange/20 transition-all resize-none"
+                    className="w-full px-3.5 py-3 rounded-lg bg-white border border-black/15 text-[#110f0e] placeholder-black/35 text-[16px] sm:text-sm focus:outline-none focus:border-kraft-orange focus:ring-1 focus:ring-kraft-orange/20 transition-all resize-none"
                   />
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full py-3 rounded-full bg-kraft-orange hover:bg-kraft-orange-hover text-white font-mono uppercase tracking-wider text-xs font-semibold flex items-center justify-center gap-2 transition-all mt-2 shadow-sm"
+                  className="w-full min-h-[48px] py-3.5 rounded-full bg-kraft-orange hover:bg-kraft-orange-hover active:bg-[#a8340a] text-white font-mono uppercase tracking-wider text-xs sm:text-sm font-semibold flex items-center justify-center gap-2 transition-all mt-2 shadow-sm"
                 >
                   <span>Submit Candidate Profile</span>
                   <ArrowRight className="w-3.5 h-3.5" />

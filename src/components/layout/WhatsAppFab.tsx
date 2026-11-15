@@ -10,12 +10,12 @@ export const WhatsAppFab: React.FC = () => {
   )}`;
 
   return (
-    <aside aria-label="Quick contact" className="fixed bottom-6 right-6 z-30">
+    <aside aria-label="Quick contact" className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-30">
       <a
         href={whatsappUrl}
         target="_blank"
         rel="noopener noreferrer"
-        className="group flex items-center gap-2.5 px-4 py-3 rounded-full bg-white/95 hover:bg-white text-[#110f0e] border border-black/10 shadow-xl backdrop-blur-md transition-all duration-300 hover:scale-105 hover:border-emerald-500"
+        className="group flex items-center justify-center gap-2.5 p-3 sm:px-4 sm:py-3 rounded-full bg-white/95 hover:bg-white text-[#110f0e] border border-black/10 shadow-xl backdrop-blur-md transition-all duration-300 hover:scale-105 hover:border-emerald-500 min-w-[48px] min-h-[48px] active:scale-95"
         title="Chat on WhatsApp with Kanhav Industries"
       >
         <div className="w-8 h-8 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center transition-transform group-hover:rotate-12">

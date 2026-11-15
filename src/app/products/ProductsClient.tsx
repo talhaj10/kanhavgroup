@@ -23,10 +23,10 @@ export default function ProductsClient() {
             <span className="w-1.5 h-1.5 bg-kraft-orange" />
             <span>Product Portfolio</span>
           </div>
-          <h1 className="font-display text-5xl sm:text-7xl lg:text-8xl text-kraft-headline tracking-tight uppercase leading-[0.95]">
+          <h1 className="font-display text-4xl xs:text-5xl sm:text-7xl lg:text-8xl text-kraft-headline tracking-tight uppercase leading-[0.95]">
             TECHNICAL COMPOSITE FABRICS
           </h1>
-          <p className="text-base sm:text-xl text-kraft-cream max-w-3xl leading-relaxed">
+          <p className="text-sm sm:text-xl text-kraft-cream max-w-3xl leading-relaxed">
             Engineered Multi-Axial Glass Fabrics, Stitch Mats, and Combination Mats designed for maximum mechanical strength, high torsional rigidity, and rapid resin wet-out.
           </p>
         </motion.div>
@@ -40,21 +40,21 @@ export default function ProductsClient() {
 
       {/* Custom Specification CTA */}
       <section className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 my-12 sm:my-16 text-center">
-        <div className="bg-white p-10 sm:p-14 rounded-3xl border border-black/[0.08] shadow-sm relative overflow-hidden">
+        <div className="bg-white p-6 sm:p-10 lg:p-14 rounded-2xl sm:rounded-3xl border border-black/[0.08] shadow-sm relative overflow-hidden">
           <div className="max-w-2xl mx-auto space-y-4 relative z-10">
             <span className="font-mono text-xs uppercase tracking-widest text-kraft-orange font-semibold">
               Bespoke Manufacturing
             </span>
-            <h2 className="text-3xl sm:text-4xl font-bold text-kraft-headline">
+            <h2 className="text-2xl sm:text-4xl font-bold text-kraft-headline">
               Need a Custom Fiber Layup, GSM, or Width?
             </h2>
-            <p className="text-sm sm:text-base text-kraft-cream leading-relaxed">
+            <p className="text-xs sm:text-base text-kraft-cream leading-relaxed">
               We engineer custom multi-axial architectures with tailored fiber orientations (0°, 90°, ±45°), chopped strand ratios, and hybrid aramid/carbon weaves.
             </p>
             <div className="pt-4 flex flex-wrap justify-center gap-4">
               <button
                 onClick={() => openRFQ()}
-                className="px-8 py-3.5 rounded-full bg-kraft-orange hover:bg-kraft-orange-hover text-white font-mono text-xs font-bold uppercase tracking-wider shadow-sm transition-all"
+                className="w-full sm:w-auto min-h-[48px] px-8 py-3.5 rounded-full bg-kraft-orange hover:bg-kraft-orange-hover active:bg-[#a8340a] text-white font-mono text-xs font-bold uppercase tracking-wider shadow-sm transition-all flex items-center justify-center"
               >
                 Inquire For Custom Spec
               </button>

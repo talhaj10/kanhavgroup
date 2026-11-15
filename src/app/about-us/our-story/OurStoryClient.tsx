@@ -40,7 +40,7 @@ export default function OurStoryClient() {
             <span className="w-1.5 h-1.5 bg-kraft-orange" />
             <span>Company Evolution (1994–2024)</span>
           </div>
-          <h1 className="font-display text-5xl sm:text-7xl lg:text-8xl text-kraft-headline tracking-tight uppercase leading-[0.95]">
+          <h1 className="font-display text-4xl xs:text-5xl sm:text-7xl lg:text-8xl text-kraft-headline tracking-tight uppercase leading-[0.95]">
             OUR STORY & HERITAGE
           </h1>
           <p className="text-base sm:text-xl text-kraft-cream max-w-3xl leading-relaxed">

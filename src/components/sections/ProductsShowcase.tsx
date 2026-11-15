@@ -86,7 +86,7 @@ export const ProductsShowcase: React.FC<ProductsShowcaseProps> = ({ onOpenRFQ })
             <div className="p-6 pt-0 mt-2">
               <button
                 onClick={() => onOpenRFQ(product.slug)}
-                className="w-full py-2.5 px-4 rounded-xl bg-white hover:bg-kraft-orange text-kraft-headline hover:text-white font-mono text-xs uppercase tracking-wider font-semibold border border-black/10 hover:border-kraft-orange transition-all duration-200 flex items-center justify-between group/btn shadow-sm"
+                className="w-full min-h-[46px] py-3 px-4 rounded-xl bg-white hover:bg-kraft-orange active:bg-[#a8340a] text-kraft-headline hover:text-white active:text-white font-mono text-xs uppercase tracking-wider font-semibold border border-black/10 hover:border-kraft-orange transition-all duration-200 flex items-center justify-between group/btn shadow-sm"
               >
                 <span>Request Technical Quote</span>
                 <ArrowUpRight className="w-4 h-4 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform" />

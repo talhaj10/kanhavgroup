@@ -154,8 +154,8 @@ export const FeaturedProductsGrid: React.FC = () => {
           </div>
         </div>
 
-        {/* Quick Product Tabs / Selector Bar */}
-        <div className="flex items-center gap-2 overflow-x-auto pb-3 mb-4 scrollbar-none sm:justify-start">
+        {/* Quick Product Tabs / Selector Bar (Edge-to-edge touch scroll on mobile) */}
+        <div className="flex items-center gap-2 overflow-x-auto pb-3 mb-4 scrollbar-none -mx-4 px-4 sm:mx-0 sm:px-0 touch-pan-x sm:justify-start">
           {PRODUCT_LINES.map((item, idx) => {
             const isActive = idx === activeIndex;
             return (
@@ -163,7 +163,7 @@ export const FeaturedProductsGrid: React.FC = () => {
                 key={item.id}
                 onClick={() => setActiveIndex(idx)}
                 onMouseEnter={() => setActiveIndex(idx)}
-                className={`group flex items-center gap-2 px-3.5 py-2 text-xs font-mono uppercase tracking-wider transition-all duration-200 border whitespace-nowrap [clip-path:polygon(0_0,calc(100%-8px)_0,100%_8px,100%_100%,0_100%)] ${
+                className={`group flex items-center gap-2 px-3.5 py-2.5 text-xs font-mono uppercase tracking-wider transition-all duration-200 border whitespace-nowrap min-h-[42px] [clip-path:polygon(0_0,calc(100%-8px)_0,100%_8px,100%_100%,0_100%)] ${
                   isActive
                     ? "bg-[#110f0e] text-white border-[#110f0e] shadow-sm"
                     : "bg-[#f8f7f4] hover:bg-[#eae7e0] text-[#38342f] border-black/[0.08]"
@@ -378,7 +378,7 @@ export const FeaturedProductsGrid: React.FC = () => {
                 className={`relative overflow-hidden cursor-pointer border transition-colors [clip-path:polygon(0_0,calc(100%-12px)_0,100%_12px,100%_100%,0_100%)] ${
                   isActive
                     ? "border-[#110f0e] bg-[#0c0a09] shadow-lg min-h-[460px] flex flex-col justify-between p-5"
-                    : "border-black/[0.1] bg-[#161413] h-[68px] flex items-center justify-between px-4"
+                    : "border-black/[0.1] bg-[#161413] min-h-[64px] flex items-center justify-between px-4 py-3 active:bg-[#201d1b]"
                 }`}
               >
                 {/* Background Image */}
@@ -430,21 +430,21 @@ export const FeaturedProductsGrid: React.FC = () => {
                       </div>
 
                       {/* Actions */}
-                      <div className="flex items-center gap-2">
+                      <div className="flex items-center gap-2.5">
                         <button
                           type="button"
                           onClick={(e) => {
                             e.stopPropagation();
                             openRFQ(item.slug);
                           }}
-                          className="flex-1 py-2.5 bg-[#cc410f] text-white font-mono text-[11px] uppercase font-bold tracking-wider text-center"
+                          className="flex-1 py-3 min-h-[46px] bg-[#cc410f] active:bg-[#a8340a] text-white font-mono text-xs uppercase font-bold tracking-wider text-center flex items-center justify-center shadow-md"
                         >
                           Request RFQ
                         </button>
                         <Link
                           href="/products"
                           onClick={(e) => e.stopPropagation()}
-                          className="px-3 py-2.5 bg-white/15 text-white font-mono text-[11px] uppercase tracking-wider"
+                          className="px-4 py-3 min-h-[46px] bg-white/15 active:bg-white/25 text-white font-mono text-xs uppercase tracking-wider flex items-center justify-center"
                         >
                           Specs
                         </Link>
@@ -455,15 +455,15 @@ export const FeaturedProductsGrid: React.FC = () => {
                   <>
                     <div className="absolute inset-0 bg-black/55 pointer-events-none z-10" />
                     <div className="relative z-20 flex items-center gap-3">
-                      <span className="font-mono text-xs font-bold text-[#cc410f] bg-black/60 px-2 py-1 border border-white/15">
+                      <span className="font-mono text-xs font-bold text-[#cc410f] bg-black/60 px-2.5 py-1 border border-white/15">
                         {item.num}
                       </span>
                       <span className="font-display text-sm uppercase tracking-wide font-bold text-white">
                         {item.title}
                       </span>
                     </div>
-                    <div className="relative z-20 w-6 h-6 rounded-full bg-white/10 flex items-center justify-center text-white/70">
-                      <ChevronRight className="w-3.5 h-3.5" />
+                    <div className="relative z-20 w-7 h-7 rounded-full bg-white/10 flex items-center justify-center text-white/70">
+                      <ChevronRight className="w-4 h-4" />
                     </div>
                   </>
                 )}
@@ -480,7 +480,7 @@ export const FeaturedProductsGrid: React.FC = () => {
 
           <Link
             href="/products"
-            className="inline-flex items-center gap-2 px-6 sm:px-7 py-3 bg-[#110f0e] hover:bg-[#cc410f] text-white font-mono text-xs uppercase font-bold tracking-wider border border-black/10 transition-all [clip-path:polygon(0_0,100%_0,100%_calc(100%-8px),calc(100%-8px)_100%,0_100%)] shadow-md"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 sm:px-7 py-3.5 min-h-[46px] bg-[#110f0e] hover:bg-[#cc410f] text-white font-mono text-xs uppercase font-bold tracking-wider border border-black/10 transition-all [clip-path:polygon(0_0,100%_0,100%_calc(100%-8px),calc(100%-8px)_100%,0_100%)] shadow-md text-center"
           >
             <span>Explore All 7 Products in Catalog</span>
             <ArrowUpRight className="w-3.5 h-3.5" />
