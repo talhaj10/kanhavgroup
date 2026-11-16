@@ -10,6 +10,9 @@ const nextConfig = {
     "127.0.0.1",
     "0.0.0.0",
     "0.0.0.0:3000",
+    "*.trycloudflare.com",
+    "older-performed-echo-park.trycloudflare.com",
+    "*.loca.lt",
   ],
   images: {
     unoptimized: true,
