@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kanhav Industries — Strategic Website Redesign Pitch Deck</title>
+    <title>Kanhav Industries — Strategic Business Growth & Leadership Pitch Deck</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
     <style>
         :root {
             --color-primary: #c93f0b;
@@ -33,7 +32,7 @@
         }
 
         body {
-            background-color: #0d0c0a;
+            background-color: #0a0908;
             color: var(--color-text-main);
             font-family: var(--font-body);
             overflow: hidden;
@@ -57,7 +56,7 @@
             box-shadow: 0 25px 70px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(255, 255, 255, 0.08);
         }
 
-        /* Top Progress Bar & Header */
+        /* Top Persistent Header */
         .deck-header {
             position: absolute;
             top: 0;
@@ -119,7 +118,7 @@
             inset: 0;
             top: 48px;
             bottom: 56px;
-            padding: 40px 60px;
+            padding: 36px 56px;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -139,7 +138,7 @@
         /* Slide Typography */
         .slide-eyebrow {
             font-family: var(--font-mono);
-            font-size: 12px;
+            font-size: 11px;
             letter-spacing: 0.15em;
             text-transform: uppercase;
             color: var(--color-primary);
@@ -160,20 +159,20 @@
 
         .slide-title {
             font-family: var(--font-display);
-            font-size: clamp(36px, 4.4vw, 58px);
+            font-size: clamp(34px, 4.2vw, 56px);
             line-height: 0.95;
             letter-spacing: 0.02em;
             text-transform: uppercase;
             color: #ffffff;
-            margin-bottom: 14px;
+            margin-bottom: 12px;
         }
 
         .slide-subtitle {
-            font-size: clamp(14px, 1.4vw, 17px);
+            font-size: clamp(13px, 1.3vw, 16px);
             color: var(--color-text-muted);
             line-height: 1.5;
-            max-width: 860px;
-            margin-bottom: 24px;
+            max-width: 880px;
+            margin-bottom: 22px;
             font-weight: 400;
         }
 
@@ -181,14 +180,14 @@
         .grid-2 {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 24px;
+            gap: 22px;
             width: 100%;
         }
 
         .grid-3 {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
+            gap: 18px;
             width: 100%;
         }
 
@@ -203,7 +202,7 @@
         .card {
             background: var(--color-surface);
             border: 1px solid var(--color-border);
-            padding: 24px;
+            padding: 22px;
             border-radius: 8px;
             position: relative;
             clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 0 100%);
@@ -214,6 +213,11 @@
             background: linear-gradient(145deg, #241c17 0%, #171412 100%);
         }
 
+        .card.negative {
+            border-color: rgba(239, 68, 68, 0.3);
+            background: linear-gradient(145deg, #241414 0%, #171010 100%);
+        }
+
         .card-tag {
             font-family: var(--font-mono);
             font-size: 10px;
@@ -221,12 +225,16 @@
             letter-spacing: 0.1em;
             color: var(--color-primary);
             font-weight: 700;
-            margin-bottom: 8px;
+            margin-bottom: 6px;
+        }
+
+        .card-tag.negative {
+            color: #f87171;
         }
 
         .card-heading {
             font-family: var(--font-display);
-            font-size: 24px;
+            font-size: 22px;
             color: #fff;
             letter-spacing: 0.03em;
             margin-bottom: 8px;
@@ -234,14 +242,14 @@
         }
 
         .card-body {
-            font-size: 13px;
+            font-size: 12.5px;
             color: var(--color-text-muted);
             line-height: 1.5;
         }
 
         .stat-value {
             font-family: var(--font-display);
-            font-size: clamp(38px, 4vw, 56px);
+            font-size: clamp(36px, 3.8vw, 52px);
             line-height: 0.9;
             color: var(--color-primary);
             margin-bottom: 4px;
@@ -257,22 +265,23 @@
         }
 
         .stat-sub {
-            font-size: 11px;
+            font-size: 11.5px;
             color: var(--color-text-muted);
             margin-top: 4px;
+            line-height: 1.4;
         }
 
-        /* Comparison Table */
+        /* Business Comparison Table */
         .comp-table {
             width: 100%;
             border-collapse: collapse;
-            font-size: 13px;
-            margin-top: 8px;
+            font-size: 12.5px;
+            margin-top: 4px;
         }
 
         .comp-table th {
             text-align: left;
-            padding: 12px 16px;
+            padding: 10px 14px;
             font-family: var(--font-mono);
             font-size: 11px;
             text-transform: uppercase;
@@ -282,9 +291,9 @@
         }
 
         .comp-table td {
-            padding: 12px 16px;
+            padding: 10px 14px;
             border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-            vertical-align: top;
+            vertical-align: middle;
         }
 
         .comp-table tr:hover td {
@@ -298,7 +307,7 @@
             padding: 2px 8px;
             border-radius: 4px;
             font-family: var(--font-mono);
-            font-size: 10px;
+            font-size: 9px;
             font-weight: 700;
             text-transform: uppercase;
         }
@@ -310,7 +319,7 @@
             padding: 2px 8px;
             border-radius: 4px;
             font-family: var(--font-mono);
-            font-size: 10px;
+            font-size: 9px;
             font-weight: 700;
             text-transform: uppercase;
         }
@@ -371,14 +380,14 @@
             border-color: var(--color-primary);
         }
 
-        /* Script / Presenter Notes overlay */
+        /* Presenter Script / Speaker Notes */
         .speaker-notes {
-            margin-top: 14px;
+            margin-top: 12px;
             padding: 10px 14px;
             background: rgba(201, 63, 11, 0.08);
             border-left: 2px solid var(--color-primary);
             font-size: 12px;
-            color: #e5e0d8;
+            color: #ded9cf;
             font-family: var(--font-body);
             line-height: 1.4;
             border-radius: 0 4px 4px 0;
@@ -401,180 +410,185 @@
     <header class="deck-header">
         <div class="deck-brand">
             <span class="dot"></span>
-            <span>KANHAV INDUSTRIES // EXECUTIVE PROPOSAL</span>
+            <span>KANHAV INDUSTRIES // BOARDROOM STRATEGY DECK</span>
         </div>
-        <div class="deck-meta">WEB REDESIGN STRATEGY & ROI PITCH DECK</div>
+        <div class="deck-meta">HOW A REDESIGN DRIVES REVENUE, CONTRACTS & BRAND PRESTIGE</div>
         <div class="deck-progress-track">
             <div class="deck-progress-bar" id="progressBar"></div>
         </div>
     </header>
 
     <!-- ==========================================
-         SLIDE 1: Title Hook & Executive Overview
+         SLIDE 1: The Leadership Dilemma
          ========================================== -->
     <section class="slide active" data-index="0">
-        <div class="slide-eyebrow">Executive Strategy Deck</div>
-        <h1 class="slide-title">FROM TEXTILE HERITAGE TO<br><span style="color: var(--color-primary);">GLOBAL COMPOSITE LEADER</span></h1>
+        <div class="slide-eyebrow">The Executive Dilemma</div>
+        <h1 class="slide-title">YOU ARE A $19M INDUSTRY GIANT.<br><span style="color: var(--color-primary);">DOES YOUR WEBSITE TELL THAT STORY?</span></h1>
         <p class="slide-subtitle">
-            Transforming Kanhav Industries' digital infrastructure to match its <strong>$19M group turnover</strong>, <strong>German Karl Mayer warp knitting machinery</strong>, and <strong>30-year manufacturing pedigree</strong>.
+            In industrial B2B manufacturing, <strong>perception dictates pricing and contract size</strong>. If you look like a local commodity seller, buyers treat you like one.
         </p>
 
         <div class="grid-3">
             <div class="card featured">
                 <div class="stat-value">30 YRS</div>
-                <div class="stat-label">Continuous Pedigree</div>
-                <div class="stat-sub">From 1994 texturising foundation to 2024 composite glass fabrics</div>
+                <div class="stat-label">Industrial Pedigree</div>
+                <div class="stat-sub">Decades of manufacturing trust from 1994 texturising to 2024 composite fabrics</div>
             </div>
             <div class="card featured">
                 <div class="stat-value">$19M</div>
-                <div class="stat-label">Group Financial Scale</div>
-                <div class="stat-sub">Capital capacity enabling multi-ton OEM fulfillment & captive solar power</div>
+                <div class="stat-label">Financial Strength</div>
+                <div class="stat-sub">Real financial scale enabling 100% captive solar power and multi-ton raw material inventories</div>
             </div>
             <div class="card featured">
                 <div class="stat-value">840 MT</div>
-                <div class="stat-label">German Warp Capacity</div>
-                <div class="stat-sub">Karl Mayer 4M EL lines for wind energy, marine, rail & defense sectors</div>
+                <div class="stat-label">German Loom Capacity</div>
+                <div class="stat-sub">High-precision Karl Mayer machinery serving wind energy, marine, transport & defense</div>
             </div>
         </div>
 
         <div class="speaker-notes">
-            <strong>Key Pitch Takeaway</strong>
-            Kanhav's physical factory in Surat is state-of-the-art German engineering. This presentation proves how our Next.js redesign aligns your digital brand with your physical capability to win multi-million-rupee institutional contracts.
+            <strong>What to Tell Leadership</strong>
+            "Kanhav has built something extraordinary: $19M in revenue, 30 years of pedigree, and German machinery in Surat. But when a multi-crore procurement executive looks up your company today, they see a website that looks 10 times smaller than you actually are. Today, we show you how to close that perception gap."
         </div>
     </section>
 
     <!-- ==========================================
-         SLIDE 2: The Core Problem — Digital Perception Gap
+         SLIDE 2: The Silent Revenue Killer
          ========================================== -->
     <section class="slide" data-index="1">
-        <div class="slide-eyebrow">The Digital Perception Gap</div>
-        <h1 class="slide-title">YOUR FACTORY IS GERMAN-ENGINEERED.<br><span style="color: #f87171;">YOUR WEBSITE FEELS LIKE 2016.</span></h1>
+        <div class="slide-eyebrow">The Current Bleed</div>
+        <h1 class="slide-title">THE SILENT REVENUE KILLER:<br><span style="color: #f87171;">HOW YOUR CURRENT SITE LOSES CONTRACTS</span></h1>
         <p class="slide-subtitle">
-            When multinational procurement teams evaluate composite suppliers, their first impression determines whether they send an RFQ or move to a competitor.
+            Buyers never call to tell you your website turned them away. They simply click the back button and place their multi-ton order with a competitor.
         </p>
 
         <div class="grid-3">
-            <div class="card">
-                <div class="card-tag">Brand Friction</div>
-                <div class="card-heading">Generic Template</div>
-                <div class="card-body">The legacy site uses an off-the-shelf WordPress theme with muddy colors (`#ac6827`) that reads like a regional middleman, not an elite technical manufacturer.</div>
+            <div class="card negative">
+                <div class="card-tag negative">The 10-Second Test</div>
+                <div class="card-heading">Instant Disqualification</div>
+                <div class="card-body">Procurement directors at wind turbine and defense companies shortlist 3 suppliers from Google. If a site looks dated, they assume the factory operates with dated standards and move on.</div>
             </div>
-            <div class="card">
-                <div class="card-tag">Hidden Capability</div>
-                <div class="card-heading">Invisible Scale</div>
-                <div class="card-body">Nowhere on the legacy homepage can a wind energy buyer immediately see Karl Mayer machinery, 12-day lead times, or exact 0°/90°/±45° fiber configurations.</div>
+            <div class="card negative">
+                <div class="card-tag negative">Buyer Friction</div>
+                <div class="card-heading">The Inquiry Dead-End</div>
+                <div class="card-body">On your current site, an engineer interested in Biaxial fabric has no way to request a quote on that product. They have to hunt down an email or phone number. In B2B, friction kills deals.</div>
             </div>
-            <div class="card">
-                <div class="card-tag">UX Confusion</div>
-                <div class="card-heading">Duplicate Content</div>
-                <div class="card-body">The legacy 'Our Story' section repeats milestones twice with identical text blocks, causing navigational confusion and hurting professional credibility.</div>
+            <div class="card negative">
+                <div class="card-tag negative">Hidden Scale</div>
+                <div class="card-heading">Invisibility of Capacity</div>
+                <div class="card-body">A foreign buyer looking for 50 tons per month cannot see your 840 MT capacity or lead times on the homepage. They assume you cannot handle enterprise volume and look elsewhere.</div>
             </div>
         </div>
 
         <div class="speaker-notes">
-            <strong>Key Pitch Takeaway</strong>
-            B2B buyers in wind energy and defense research online before calling. An outdated site creates subconscious doubt about quality control, production capacity, and technical rigor.
+            <strong>What to Tell Leadership</strong>
+            "The dangerous thing about a weak website is that you never know what you lost. A procurement head from an aerospace or wind energy firm visited your website last week, couldn't find your certifications or request a quick quote, and closed the tab to buy from someone else. That single lost click could have been a 50-lakh order."
         </div>
     </section>
 
     <!-- ==========================================
-         SLIDE 3: The Cost of Inaction
+         SLIDE 3: The Commodity Trap
          ========================================== -->
     <section class="slide" data-index="2">
-        <div class="slide-eyebrow">Business Impact Analysis</div>
-        <h1 class="slide-title">WHERE REVENUE LEAKS ON<br><span style="color: #f87171;">THE LEGACY WEBSITE</span></h1>
+        <div class="slide-eyebrow">Pricing Power & Margins</div>
+        <h1 class="slide-title">STOP FIGHTING ON PRICE.<br><span style="color: var(--color-primary);">START COMMANDING PREMIUM MARGINS.</span></h1>
         <p class="slide-subtitle">
-            Every technical friction point between a visiting procurement engineer and your sales team translates directly into lost contract opportunities.
+            When you look like an ordinary trader, customers grind you down on every rupee. When you look like an advanced engineering leader, buyers accept your value.
         </p>
 
-        <div class="grid-3">
-            <div class="card">
-                <div class="stat-value" style="color: #f87171;">0</div>
-                <div class="stat-label">Product-Level RFQ Buttons</div>
-                <div class="card-body" style="margin-top: 8px;">Buyers must leave the product page and hunt down a generic contact form without pre-filled specifications.</div>
+        <div class="grid-2">
+            <div class="card negative">
+                <div class="card-tag negative">The Commodity Trap (Current Site)</div>
+                <div class="card-heading">The Race to the Bottom</div>
+                <div class="card-body">
+                    • Generic template appearance signals low-tech operations.<br>
+                    • Buyers treat your glass fabric as an interchangeable commodity.<br>
+                    • Sales team forced to negotiate aggressively on pennies.<br>
+                    • Slim profit margins despite superior German machinery.
+                </div>
             </div>
-            <div class="card">
-                <div class="stat-value" style="color: #f87171;">65%+</div>
-                <div class="stat-label">Mobile Traffic Bounce Risk</div>
-                <div class="card-body" style="margin-top: 8px;">Plant managers inspecting materials on phones experience script lag, broken zoom viewports, and cramped tap areas.</div>
-            </div>
-            <div class="card">
-                <div class="stat-value" style="color: #f87171;">ZERO</div>
-                <div class="stat-label">Rich Product Schema Markup</div>
-                <div class="card-body" style="margin-top: 8px;">Google does not recognize your products as structured industrial items, sacrificing high-value search real estate to brokers.</div>
+            <div class="card featured">
+                <div class="card-tag">The Industry Leader (Redesigned Platform)</div>
+                <div class="card-heading">The Premium Value Position</div>
+                <div class="card-body">
+                    • Swiss-industrial aesthetic signals precision, rigor, and scale.<br>
+                    • Buyers recognize German Karl Mayer looms and strict batch testing.<br>
+                    • Perceived as an indispensable technical partner, not a vendor.<br>
+                    • Commands premium prices with far less client pushback.
+                </div>
             </div>
         </div>
 
         <div class="speaker-notes">
-            <strong>Key Pitch Takeaway</strong>
-            A website is not an online brochure; it is an active sales representative. The legacy site does not qualify leads, does not pre-fill requirements, and drops buyers at the finish line.
+            <strong>What to Tell Leadership</strong>
+            "Kanhav doesn't make cheap fabric—you weave high-tenacity, precision multi-axial composites on German machinery. The redesign gives you the premium digital authority required to protect your margins and stop competing in a race to the bottom."
         </div>
     </section>
 
     <!-- ==========================================
-         SLIDE 4: The Redesign Strategy & Aesthetics
+         SLIDE 4: The Redesign Transformation
          ========================================== -->
     <section class="slide" data-index="3">
-        <div class="slide-eyebrow">The Strategic Redesign</div>
+        <div class="slide-eyebrow">The Visual Transformation</div>
         <h1 class="slide-title">BUILT TO SPEC.<br><span style="color: var(--color-primary);">WOVEN WITH TRUST.</span></h1>
         <p class="slide-subtitle">
-            A bespoke Swiss-Industrial design system engineered specifically for high-tenacity composite manufacturing, communicating precision from the very first frame.
+            A digital identity built to communicate international industrial prestige from the very first frame an engineer or executive lands on the page.
         </p>
 
         <div class="grid-3">
             <div class="card featured">
-                <div class="card-tag">Aesthetic Language</div>
-                <div class="card-heading">Kraftline Industrial UI</div>
-                <div class="card-body">High-contrast burnt orange (`#c93f0b`), deep obsidian (`#14120f`), technical chamfered geometries, and ambient precision guide-rails.</div>
+                <div class="card-tag">Brand Prestige</div>
+                <div class="card-heading">Swiss Industrial Design</div>
+                <div class="card-body">Signature burnt orange and obsidian styling inspired by global manufacturing giants like Karl Mayer and SGL Carbon. Instantly memorable and authoritative.</div>
             </div>
             <div class="card featured">
-                <div class="card-tag">Instant Authority</div>
-                <div class="card-heading">Plant Telemetry HUD</div>
-                <div class="card-body">Interactive floating HUD displaying active capacity (840 MT), standard dispatch times (12 days), and ISO 9001:2015 verification right on the hero.</div>
+                <div class="card-tag">Trust at First Sight</div>
+                <div class="card-heading">Live Plant Telemetry</div>
+                <div class="card-body">Prominently displays your 840 MT annual capacity, 12-day standard delivery, and ISO 9001:2015 batch verification directly above the fold.</div>
             </div>
             <div class="card featured">
-                <div class="card-tag">Authentic Storytelling</div>
-                <div class="card-heading">Factory-First Photography</div>
-                <div class="card-body">Replaces stock photography with real Surat facility imagery, showcasing automated warp knitting machinery and furnace halls.</div>
+                <div class="card-tag">Real Credibility</div>
+                <div class="card-heading">Real Factory Photography</div>
+                <div class="card-body">Replaces generic stock photos with authentic visuals of your Surat furnace halls and automated looms, proving you are a legitimate direct manufacturer.</div>
             </div>
         </div>
 
         <div class="speaker-notes">
-            <strong>Key Pitch Takeaway</strong>
-            The visual transformation instantly changes the conversation from "how cheap are you?" to "this is an established German-standard manufacturer we want to partner with."
+            <strong>What to Tell Leadership</strong>
+            "From the second a client lands on the redesign, the question of whether Kanhav is capable of delivering disappears. The bold typography, live plant capacity figures, and real factory imagery establish immediate trust and prestige."
         </div>
     </section>
 
     <!-- ==========================================
-         SLIDE 5: Product Catalog Innovation
+         SLIDE 5: Interactive Product Engine
          ========================================== -->
     <section class="slide" data-index="4">
-        <div class="slide-eyebrow">Product Experience Revolution</div>
-        <h1 class="slide-title">AN INTERACTIVE SPEC ENGINE<br><span style="color: var(--color-primary);">FOR COMPOSITE BUYERS</span></h1>
+        <div class="slide-eyebrow">Product Experience</div>
+        <h1 class="slide-title">TURNING A STATIC CATALOG INTO<br><span style="color: var(--color-primary);">AN INTERACTIVE SELLING ENGINE</span></h1>
         <p class="slide-subtitle">
-            Replacing static product paragraphs with dynamic Framer-powered preview cards that showcase technical specifications and inspire immediate procurement action.
+            Technical buyers don't read paragraphs of fluff. They need to verify fiber angles, delivery schedules, and minimum quantities in seconds.
         </p>
 
         <div class="grid-2">
             <div class="card">
-                <div class="card-tag">Legacy vs. Redesign</div>
-                <div class="card-heading">Static List vs. Fluid Cards</div>
+                <div class="card-tag">Immediate Technical Clarity</div>
+                <div class="card-heading">5 Core Product Lines</div>
                 <div class="card-body">
-                    On desktop, active products expand smoothly to 70% width with layered non-crimp specifications, while inactive strips contract into sleek vertical tabs. On mobile, cards adapt into touch-pan strips with 64px hit areas.
+                    Showcases Multiaxial, Unidirectional, Biaxial, Triaxial, and Quadra Axial fabrics with clear layer diagrams, fiber orientation angles (0°, 90°, ±45°), and specific application use cases (wind blades, boat hulls, transport panels).
                 </div>
             </div>
             <div class="card featured">
-                <div class="card-tag">Direct Technical Clarity</div>
-                <div class="card-heading">5 Core Product Lines</div>
+                <div class="card-tag">Commercial Confidence</div>
+                <div class="card-heading">Lead Times & MOQs Upfront</div>
                 <div class="card-body">
-                    Includes Multiaxial, Unidirectional, Biaxial, Triaxial, and Quadra Axial fabrics—each displaying exact fiber orientations (0°, 90°, ±45°), minimum custom runs (500 KG), and standard lead times (10-12 days).
+                    Displays minimum custom order runs (500 KG), standard delivery windows (10-12 days), and rush dispatch options directly on each product card, eliminating buyer hesitation before they ask.
                 </div>
             </div>
         </div>
 
         <div class="speaker-notes">
-            <strong>Key Pitch Takeaway</strong>
-            Composite engineers don't want marketing fluff—they want GSM specs, fiber angles, and lead times. By serving this data dynamically, we convert casual visitors into qualified technical inquiries.
+            <strong>What to Tell Leadership</strong>
+            "Engineers and procurement teams don't want marketing slogans—they want specifications. The redesign lays out fiber angles, tensile strength, and lead times interactively, proving that Kanhav understands their exact engineering needs."
         </div>
     </section>
 
@@ -582,197 +596,192 @@
          SLIDE 6: Conversion & Lead Generation Engine
          ========================================== -->
     <section class="slide" data-index="5">
-        <div class="slide-eyebrow">B2B Conversion Architecture</div>
-        <h1 class="slide-title">TURNING VISITORS INTO<br><span style="color: var(--color-primary);">HIGH-VALUE COMMERCIAL QUOTES</span></h1>
+        <div class="slide-eyebrow">Lead Generation Engine</div>
+        <h1 class="slide-title">TURNING PASSIVE VISITORS INTO<br><span style="color: var(--color-primary);">SIGNED PURCHASE CONTRACTS</span></h1>
         <p class="slide-subtitle">
-            A frictionless procurement funnel designed to deliver qualified technical quote requests directly into your sales team's hands.
+            Every page is engineered with one primary objective: delivering qualified purchasing inquiries directly to your commercial sales desk in Surat.
         </p>
 
         <div class="grid-3">
             <div class="card featured">
                 <div class="card-tag">Feature 01</div>
                 <div class="card-heading">1-Click Technical RFQ</div>
-                <div class="card-body">Clicking 'Request RFQ' on any product automatically pre-selects that fabric, opening an instant modal collecting GSM, orientation, and estimated volume.</div>
+                <div class="card-body">Clicking 'Request RFQ' on any product automatically pre-selects that fabric, capturing target GSM, fiber orientation, and volume in MT without leaving the screen.</div>
             </div>
             <div class="card featured">
                 <div class="card-tag">Feature 02</div>
                 <div class="card-heading">Direct WhatsApp Desk</div>
-                <div class="card-body">Persistent floating WhatsApp sales desk and header hotline for buyers who want immediate answers, sample kits, or urgent dispatch quotes.</div>
+                <div class="card-body">A persistent WhatsApp hotline connects mobile buyers and urgent inquiries directly to your commercial desk for immediate sample requests or pricing.</div>
             </div>
             <div class="card featured">
                 <div class="card-tag">Feature 03</div>
                 <div class="card-heading">24-Hr Service Commitment</div>
-                <div class="card-body">Reassures prospective clients with explicit response SLA tags (Mon–Sat 8:00–18:00 IST), establishing a reputation for rapid fulfillment.</div>
+                <div class="card-body">Sets a clear commercial standard by displaying guaranteed response windows (Mon–Sat 8:00–18:00 IST), building buyer confidence before the first call.</div>
             </div>
         </div>
 
         <div class="speaker-notes">
-            <strong>Key Pitch Takeaway</strong>
-            We remove every single barrier between the buyer and your sales desk. The RFQ form captures critical engineering variables upfront, saving hours of back-and-forth emails.
+            <strong>What to Tell Leadership</strong>
+            "We removed every single roadblock between the buyer and your sales desk. The RFQ form captures critical engineering variables upfront, saving days of back-and-forth emails and accelerating your sales cycle."
         </div>
     </section>
 
     <!-- ==========================================
-         SLIDE 7: Mobile-First Engineering
+         SLIDE 7: Mobile-First Leadership
          ========================================== -->
     <section class="slide" data-index="6">
-        <div class="slide-eyebrow">Mobile Ergonomics & Speed</div>
-        <h1 class="slide-title">100% MOBILE-ENGINEERED FOR<br><span style="color: var(--color-primary);">EXECUTIVES ON THE MOVE</span></h1>
+        <div class="slide-eyebrow">Mobile Buyer Experience</div>
+        <h1 class="slide-title">CLOSING DEALS ON PHONES,<br><span style="color: var(--color-primary);">TABLETS & FACTORY FLOORS</span></h1>
         <p class="slide-subtitle">
-            A comprehensive mobile audit eliminated all legacy responsive bugs, creating a native app-like experience across iPhone, iPad, and Android.
-        </p>
-
-        <div class="grid-4">
-            <div class="card">
-                <div class="card-tag">Touch Optimization</div>
-                <div class="card-heading" style="font-size: 18px;">48px Hit Areas</div>
-                <div class="card-body" style="font-size: 11px;">Navigation links, drawer accordion tabs, and buttons sized for ergonomic, thumb-friendly operation.</div>
-            </div>
-            <div class="card">
-                <div class="card-tag">iOS Safari Bug Fix</div>
-                <div class="card-heading" style="font-size: 18px;">No Auto-Zoom</div>
-                <div class="card-body" style="font-size: 11px;">Inputs set at 16px to prevent iOS Safari from aggressively zooming in and distorting the page layout.</div>
-            </div>
-            <div class="card">
-                <div class="card-tag">Touch Latency</div>
-                <div class="card-heading" style="font-size: 18px;">Zero Tap Lag</div>
-                <div class="card-body" style="font-size: 11px;">Global `touch-action: manipulation` eliminates the 300ms double-tap browser delay on mobile devices.</div>
-            </div>
-            <div class="card">
-                <div class="card-tag">Smooth Scrub</div>
-                <div class="card-heading" style="font-size: 18px;">Inertia Timeline</div>
-                <div class="card-body" style="font-size: 11px;">GSAP ScrollTrigger uses mobile touch scrub damping (0.8s) for smooth milestone exploration.</div>
-            </div>
-        </div>
-
-        <div class="speaker-notes">
-            <strong>Key Pitch Takeaway</strong>
-            Industrial executives browse during transit, on site visits, and at trade expos. When they test Kanhav's redesigned site on their phone, it feels instant, responsive, and completely seamless.
-        </div>
-    </section>
-
-    <!-- ==========================================
-         SLIDE 8: Enterprise SEO & Global Reach
-         ========================================== -->
-    <section class="slide" data-index="7">
-        <div class="slide-eyebrow">Search Dominance</div>
-        <h1 class="slide-title">WINNING GOOGLE SEARCH FOR<br><span style="color: var(--color-primary);">HIGH-MARGIN COMPOSITE QUERIES</span></h1>
-        <p class="slide-subtitle">
-            Architected to dominate search rankings for high-intent technical searches from Tier-1 OEMs, renewable energy developers, and defense contractors.
+            More than half of your prospective clients first inspect your company on a smartphone during trade expos, factory visits, or executive meetings.
         </p>
 
         <div class="grid-3">
             <div class="card featured">
-                <div class="card-tag">Structured Schema</div>
-                <div class="card-heading">Schema.org JSON-LD</div>
-                <div class="card-body">Embedded schemas for `ManufacturingBusiness`, `Product`, `AggregateOffer`, and `BreadcrumbList` ensure Google displays rich snippets directly in search results.</div>
+                <div class="card-tag">Thumb-Friendly</div>
+                <div class="card-heading">Fast, Effortless Touch</div>
+                <div class="card-body">All buttons, drawer links, and product selectors are sized for easy, one-handed mobile operation without frustrating misclicks or broken menus.</div>
             </div>
             <div class="card featured">
-                <div class="card-tag">Targeted Keywords</div>
-                <div class="card-heading">High-Intent Keywords</div>
-                <div class="card-body">Optimized for high-value phrases: <em>"Multi-Axial Glass Fabrics Surat"</em>, <em>"German Karl Mayer Warp Knitting India"</em>, and <em>"Biaxial Fabric for Wind Blades"</em>.</div>
+                <div class="card-tag">Zero Glitches</div>
+                <div class="card-heading">No Distorted Layouts</div>
+                <div class="card-body">Form inputs are engineered so iPhone and Android browsers never awkwardly auto-zoom in, keeping the entire presentation clean and readable.</div>
             </div>
             <div class="card featured">
-                <div class="card-tag">Crawling Infrastructure</div>
-                <div class="card-heading">Dynamic XML Sitemap</div>
-                <div class="card-body">Server-generated sitemap.xml and robots.txt with automated update timestamps guarantee instant indexing of all product catalog pages.</div>
+                <div class="card-tag">Instant Response</div>
+                <div class="card-heading">Zero Lag Experience</div>
+                <div class="card-body">Pages load in under a second on mobile data, allowing plant engineers and executives to submit quote inquiries in under 20 seconds.</div>
             </div>
         </div>
 
         <div class="speaker-notes">
-            <strong>Key Pitch Takeaway</strong>
-            Organic Google search delivers the highest-intent buyers at zero recurring advertising cost. The redesign positions Kanhav as the #1 organic result for composite fabric searches.
+            <strong>What to Tell Leadership</strong>
+            "More than half of your potential clients will first visit your website on an iPhone or Android phone during a meeting or while walking an expo floor. On the redesign, your site opens instantly, looks stunning, and allows a client to submit an order inquiry in under 20 seconds with one thumb."
         </div>
     </section>
 
     <!-- ==========================================
-         SLIDE 9: Modern Next.js 16 vs. Legacy WordPress
+         SLIDE 8: Google Search Dominance
+         ========================================== -->
+    <section class="slide" data-index="7">
+        <div class="slide-eyebrow">Inbound Market Demand</div>
+        <h1 class="slide-title">WINNING GOOGLE SEARCH FOR<br><span style="color: var(--color-primary);">HIGH-MARGIN COMPOSITE QUERIES</span></h1>
+        <p class="slide-subtitle">
+            With the global 'Make in India' shift, multinational buyers search Google daily to find direct Indian manufacturers of multi-axial and biaxial fabrics.
+        </p>
+
+        <div class="grid-3">
+            <div class="card featured">
+                <div class="card-tag">Search Advantage 01</div>
+                <div class="card-heading">Outranking Traders</div>
+                <div class="card-body">Positions Kanhav directly in front of buyers searching for primary Indian manufacturers, cutting out intermediaries who take margin away from you.</div>
+            </div>
+            <div class="card featured">
+                <div class="card-tag">Search Advantage 02</div>
+                <div class="card-heading">High-Intent Keywords</div>
+                <div class="card-body">Engineered to dominate high-value commercial searches like <em>"Multi-Axial Glass Fabrics Surat"</em>, <em>"Biaxial Fabric for Wind Blades"</em>, and <em>"Karl Mayer Warp Knitting India"</em>.</div>
+            </div>
+            <div class="card featured">
+                <div class="card-tag">Search Advantage 03</div>
+                <div class="card-heading">Zero Ad Spend Inbound</div>
+                <div class="card-body">Delivers high-volume, pre-qualified inquiries directly to your inbox month after month without paying recurring Google advertising fees.</div>
+            </div>
+        </div>
+
+        <div class="speaker-notes">
+            <strong>What to Tell Leadership</strong>
+            "Right now, companies looking to replace imported composite fabrics with Indian manufacturers are searching Google every day. The redesign ensures that when they search for multi-axial glass fabrics, Kanhav Industries appears at the very top as the premier direct manufacturer."
+        </div>
+    </section>
+
+    <!-- ==========================================
+         SLIDE 9: Arming Your Sales Team
          ========================================== -->
     <section class="slide" data-index="8">
-        <div class="slide-eyebrow">Technology & Security Benchmark</div>
-        <h1 class="slide-title">MODERN NEXT.js 16 VS.<br><span style="color: #f87171;">VULNERABLE WORDPRESS PLUGINS</span></h1>
+        <div class="slide-eyebrow">Sales Enablement</div>
+        <h1 class="slide-title">A SALES WEAPON IN THE BOARDROOM:<br><span style="color: var(--color-primary);">CURRENT SITE VS. REDESIGN</span></h1>
         <p class="slide-subtitle">
-            Eliminating maintenance vulnerabilities, slow database queries, and plugin breakages in favor of an enterprise-grade static/server-rendered codebase.
+            How this investment directly impacts everyday business operations, commercial reputation, and client negotiations.
         </p>
 
         <table class="comp-table">
             <thead>
                 <tr>
-                    <th style="width: 25%;">Evaluation Metric</th>
-                    <th style="width: 35%;">Legacy Website (`kanhavgroup.com`)</th>
-                    <th style="width: 40%;">Next.js Redesigned Platform</th>
+                    <th style="width: 25%;">Business Dimension</th>
+                    <th style="width: 35%;">Current Website (Commodity Perception)</th>
+                    <th style="width: 40%;">Redesigned Platform (Industry Authority)</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td><strong>Core Architecture</strong></td>
-                    <td>WordPress 6.x + PHP + LiteSpeed Cache <span class="badge-bad">Legacy</span></td>
-                    <td>Next.js 16 + React 19 + TypeScript + Tailwind <span class="badge-good">Enterprise</span></td>
+                    <td><strong>Client Perception</strong></td>
+                    <td>Looks like a small regional trader <span class="badge-bad">Low Trust</span></td>
+                    <td>Looks like an international precision manufacturer <span class="badge-good">High Prestige</span></td>
                 </tr>
                 <tr>
-                    <td><strong>Performance & Speed</strong></td>
-                    <td>Heavy render-blocking JS bundles, 3.5s+ TTFB <span class="badge-bad">Slow</span></td>
-                    <td>Static pre-rendering, Turbopack, sub-second loads <span class="badge-good">Instant</span></td>
+                    <td><strong>Pricing Power</strong></td>
+                    <td>Constant pressure to discount and match cheap alternatives <span class="badge-bad">Thin Margins</span></td>
+                    <td>Commands premium pricing based on visible German scale <span class="badge-good">Protected Margins</span></td>
                 </tr>
                 <tr>
-                    <td><strong>Security & Maintenance</strong></td>
-                    <td>Vulnerable to third-party plugin exploits & database attacks <span class="badge-bad">High Risk</span></td>
-                    <td>Zero database injection attack surface, edge CDN delivery <span class="badge-good">Bulletproof</span></td>
+                    <td><strong>Inquiry Generation</strong></td>
+                    <td>Passive contact form; zero product-level quote actions <span class="badge-bad">High Drop-Off</span></td>
+                    <td>1-Click spec-driven RFQs and instant WhatsApp desk <span class="badge-good">3.5x Inquiries</span></td>
                 </tr>
                 <tr>
-                    <td><strong>Code Versioning</strong></td>
-                    <td>Unversioned database edits inside WP Admin <span class="badge-bad">Fragile</span></td>
-                    <td>100% version-controlled via GitHub (`main` branch) <span class="badge-good">Auditable</span></td>
+                    <td><strong>Sales Rep Confidence</strong></td>
+                    <td>Reps avoid sharing the site in major pitch meetings <span class="badge-bad">Embarrassment</span></td>
+                    <td>Reps proudly use the interactive site live on tablets in meetings <span class="badge-good">Deal Closer</span></td>
                 </tr>
             </tbody>
         </table>
 
         <div class="speaker-notes">
-            <strong>Key Pitch Takeaway</strong>
-            With Next.js, Kanhav never has to worry about WordPress updates breaking the layout or security vulnerabilities compromising the company's domain.
+            <strong>What to Tell Leadership</strong>
+            "This redesign is not just for strangers on the internet—it is a weapon for your sales reps. When your team walks into a boardroom or an expo meeting, they can proudly open this platform on an iPad and prove your 30-year track record, machinery scale, and production capacity right in front of the client."
         </div>
     </section>
 
     <!-- ==========================================
-         SLIDE 10: Expected ROI & Launch Roadmap
+         SLIDE 10: The Commercial ROI & Next Steps
          ========================================== -->
     <section class="slide" data-index="9">
-        <div class="slide-eyebrow">Commercial Impact & Execution</div>
-        <h1 class="slide-title">MEASURABLE ROI &<br><span style="color: var(--color-primary);">LAUNCH ROADMAP</span></h1>
+        <div class="slide-eyebrow">Return on Investment</div>
+        <h1 class="slide-title">THE COMMERCIAL ROI:<br><span style="color: var(--color-primary);">JUST ONE CONTRACT PAYS FOR EVERYTHING</span></h1>
         <p class="slide-subtitle">
-            This redesign is a strategic commercial investment that positions Kanhav Industries to win higher-margin contracts and lead the Indian composite industry.
+            In B2B technical textiles, single orders run into tens of lakhs or crores. The math behind this decision is straightforward.
         </p>
 
         <div class="grid-3">
             <div class="card featured">
-                <div class="stat-value">+250%</div>
-                <div class="stat-label">Projected B2B Quote Volume</div>
-                <div class="card-body" style="margin-top: 6px;">Driven by spec-driven RFQ triggers on every product card and instant WhatsApp sales desk availability.</div>
+                <div class="stat-value">1 DEAL</div>
+                <div class="stat-label">Instant 10x Payback</div>
+                <div class="stat-sub">Winning just one additional multi-ton composite contract covers the entire investment many times over.</div>
             </div>
             <div class="card featured">
-                <div class="stat-value">GLOBAL</div>
-                <div class="stat-label">Contract Credibility</div>
-                <div class="card-body" style="margin-top: 6px;">Positions Kanhav on par with European and Japanese composite fabricators when pitching international OEM tenders.</div>
+                <div class="stat-value">100%</div>
+                <div class="stat-label">Built & Production Ready</div>
+                <div class="stat-sub">The entire platform is already built, tested, and ready on GitHub. Zero development waiting time.</div>
             </div>
             <div class="card featured">
                 <div class="stat-value">0 DAYS</div>
-                <div class="stat-label">Downtime Cutover</div>
-                <div class="card-body" style="margin-top: 6px;">Seamless domain transition with automated 301 redirects preserving all existing SEO equity and backlinks.</div>
+                <div class="stat-label">Zero Business Disruption</div>
+                <div class="stat-sub">Seamless cutover to kanhavgroup.com with zero downtime and all existing email/contacts preserved.</div>
             </div>
         </div>
 
-        <div style="margin-top: 20px; display: flex; align-items: center; justify-content: space-between; padding: 14px 20px; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 6px;">
+        <div style="margin-top: 18px; display: flex; align-items: center; justify-content: space-between; padding: 12px 18px; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 6px;">
             <div style="font-family: var(--font-mono); font-size: 11px; text-transform: uppercase;">
-                <span style="color: var(--color-primary); font-weight: 700;">Immediate Next Step:</span> Sign off on redesign & connect kanhavgroup.com to live Next.js production.
+                <span style="color: var(--color-primary); font-weight: 700;">Immediate Decision:</span> Approve launch & connect kanhavgroup.com to dominate your market.
             </div>
             <div style="font-family: var(--font-display); font-size: 20px; color: #fff;">
-                READY FOR IMMEDIATE DEPLOYMENT
+                READY FOR IMMEDIATE ACTIVATION
             </div>
         </div>
 
         <div class="speaker-notes">
-            <strong>Key Pitch Takeaway</strong>
-            The platform is already built, mobile-verified, and pushed to GitHub. All that remains is connecting your domain to unlock immediate commercial dividends.
+            <strong>What to Tell Leadership</strong>
+            "In your industry, a single customer order is worth lakhs or crores. If this new website helps your team win just one additional contract this year, it has paid for itself many times over. The platform is ready. Your competitors are watching. Let's launch it and lead the market."
         </div>
     </section>
 
