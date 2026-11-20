@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { Factory, Award, Globe2, Cpu, ArrowUpRight, Users } from "lucide-react";
 import { KANHAV_DATA } from "@/data/kanhav-data";
+import { ParallaxImage } from "@/components/ui/Parallax";
 
 export const AboutBento: React.FC = () => {
   return (
@@ -26,15 +27,16 @@ export const AboutBento: React.FC = () => {
           transition={{ duration: 0.6 }}
           className="md:col-span-8 glass-panel p-6 sm:p-8 rounded-2xl relative overflow-hidden flex flex-col justify-between group card-hover"
         >
-          {/* Subtle background photo */}
+          {/* Subtle parallax background photo */}
           <div className="absolute inset-0 pointer-events-none opacity-10 group-hover:opacity-15 transition-opacity">
-            <Image
+            <ParallaxImage
               src="/assets/images/about-us-page-background.webp"
               alt="Kanhav Surat Facility"
-              fill
-              className="object-cover"
+              speed={-0.12}
+              scale={1.16}
+              containerClassName="absolute inset-0 w-full h-full"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-white via-white/90 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-white via-white/90 to-transparent z-10" />
           </div>
 
           <div className="relative z-10 space-y-4">

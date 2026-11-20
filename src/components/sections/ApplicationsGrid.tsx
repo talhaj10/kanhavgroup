@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { ArrowUpRight } from "lucide-react";
 import { KANHAV_DATA } from "@/data/kanhav-data";
+import { ParallaxImage } from "@/components/ui/Parallax";
 
 const APPLICATION_SPANS: Record<string, string> = {
   "app-1": "col-span-1 lg:col-span-8 lg:row-span-2",
@@ -44,13 +45,15 @@ export const ApplicationsGrid: React.FC = () => {
                 app.span || APPLICATION_SPANS[app.id] || "col-span-1 lg:col-span-4"
               }`}
             >
-              {/* Background Image */}
-              <Image
+              {/* Parallax Background Image */}
+              <ParallaxImage
                 src={app.image}
                 alt={app.title}
-                fill
+                speed={-0.12}
+                scale={1.16}
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                className="object-cover object-center group-hover:scale-105 transition-transform duration-700 filter brightness-75 group-hover:brightness-90"
+                containerClassName="absolute inset-0 w-full h-full"
+                imageClassName="object-center group-hover:scale-105 transition-transform duration-700 filter brightness-75 group-hover:brightness-90"
               />
 
               {/* Gradient Overlays */}

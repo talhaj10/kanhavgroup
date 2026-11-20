@@ -5,6 +5,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { useRFQ } from "@/context/RFQContext";
 import { KANHAV_DATA } from "@/data/kanhav-data";
+import { ParallaxImage, ParallaxLayer } from "@/components/ui/Parallax";
 
 interface HeroProps {
   onOpenRFQ?: () => void;
@@ -105,62 +106,69 @@ export const Hero: React.FC<HeroProps> = ({ onOpenRFQ }) => {
           RIGHT PANEL: Full-Bleed High-Res Industrial Facility Photo + Floating HUD
           ========================================================================= */}
       <div className="relative flex-1 min-h-[360px] sm:min-h-[450px] lg:min-h-full w-full bg-[#14120f] overflow-hidden">
-        {/* Full-bleed Factory Photography */}
-        <Image
+        {/* Parallax Factory Photography */}
+        <ParallaxImage
           src="/assets/images/industrial-furnace-hall-reflections.png"
           alt="Kanhav Industries High-Tech Industrial Facility"
           fill
           priority
+          speed={-0.16}
+          scale={1.16}
           sizes="(max-width: 1024px) 100vw, 58vw"
-          className="object-cover object-center filter brightness-95 contrast-105"
+          containerClassName="absolute inset-0 w-full h-full"
+          imageClassName="object-center filter brightness-95 contrast-105"
         />
 
         {/* Ambient subtle vignette */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-black/20 pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-black/20 pointer-events-none z-10" />
 
-        {/* Floating Technical HUD Widget (Bottom Right on desktop, centered bottom on mobile) */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.95, y: 20 }}
-          animate={{ opacity: 1, scale: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.35, ease: [0.16, 1, 0.3, 1] }}
-          className="absolute bottom-4 sm:bottom-10 left-4 right-4 sm:left-auto sm:right-10 z-20 sm:w-[320px] max-w-[340px] mx-auto sm:mx-0 bg-[#14120f]/90 backdrop-blur-md border border-white/10 p-4 sm:p-6 text-white shadow-2xl [clip-path:polygon(0_0,calc(100%-16px)_0,100%_16px,100%_100%,0_100%)]"
-        >
-          {/* Top Label */}
-          <span className="font-mono text-[9px] uppercase tracking-widest text-white/60 block mb-2 sm:mb-3 font-semibold">
-            {currentWindow.sub}
-          </span>
+        {/* Floating Technical HUD Widget with Optical Depth */}
+        <div className="absolute bottom-4 sm:bottom-10 left-4 right-4 sm:left-auto sm:right-10 z-20 sm:w-[320px] max-w-[340px] mx-auto sm:mx-0">
+          <ParallaxLayer speed={0.10} travelDistance={28}>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95, y: 20 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.35, ease: [0.16, 1, 0.3, 1] }}
+              className="w-full bg-[#14120f]/90 backdrop-blur-md border border-white/10 p-4 sm:p-6 text-white shadow-2xl [clip-path:polygon(0_0,calc(100%-16px)_0,100%_16px,100%_100%,0_100%)]"
+            >
+              {/* Top Label */}
+              <span className="font-mono text-[9px] uppercase tracking-widest text-white/60 block mb-2 sm:mb-3 font-semibold">
+                {currentWindow.sub}
+              </span>
 
-          {/* Metric Row */}
-          <div className="flex items-end justify-between gap-4">
-            <div className="font-mono text-[11px] sm:text-xs text-white/80 leading-tight">
-              {currentWindow.label.split(" ")[0]}
-              <br />
-              {currentWindow.label.split(" ").slice(1).join(" ")}
-            </div>
+              {/* Metric Row */}
+              <div className="flex items-end justify-between gap-4">
+                <div className="font-mono text-[11px] sm:text-xs text-white/80 leading-tight">
+                  {currentWindow.label.split(" ")[0]}
+                  <br />
+                  {currentWindow.label.split(" ").slice(1).join(" ")}
+                </div>
 
-            <div className="font-display text-3xl sm:text-5xl text-[#cc410f] font-bold tracking-tight text-right leading-none">
-              {currentWindow.value}
-            </div>
-          </div>
+                <div className="font-display text-3xl sm:text-5xl text-[#cc410f] font-bold tracking-tight text-right leading-none">
+                  {currentWindow.value}
+                </div>
+              </div>
 
-          {/* Progress Indicator Dashes (Carousel controls) */}
-          <div className="flex items-center gap-2 mt-4 sm:mt-5 pt-3 border-t border-white/10">
-            {metricWindows.map((_, idx) => (
-              <button
-                key={idx}
-                onClick={() => setActiveMetricIdx(idx)}
-                className="py-2 flex-1 flex items-center justify-center focus:outline-none"
-                aria-label={`Select metric window ${idx + 1}`}
-              >
-                <span
-                  className={`h-1 w-full rounded-full transition-all ${
-                    idx === activeMetricIdx ? "bg-white" : "bg-white/20 hover:bg-white/40"
-                  }`}
-                />
-              </button>
-            ))}
-          </div>
-        </motion.div>
+              {/* Progress Indicator Dashes (Carousel controls) */}
+              <div className="flex items-center gap-2 mt-4 sm:mt-5 pt-3 border-t border-white/10">
+                {metricWindows.map((_, idx) => (
+                  <button
+                    key={idx}
+                    onClick={() => setActiveMetricIdx(idx)}
+                    className="py-2 flex-1 flex items-center justify-center focus:outline-none cursor-pointer"
+                    aria-label={`Select metric window ${idx + 1}`}
+                  >
+                    <span
+                      className={`h-1 w-full rounded-full transition-all ${
+                        idx === activeMetricIdx ? "bg-white" : "bg-white/20 hover:bg-white/40"
+                      }`}
+                    />
+                  </button>
+                ))}
+              </div>
+            </motion.div>
+          </ParallaxLayer>
+        </div>
       </div>
     </section>
   );

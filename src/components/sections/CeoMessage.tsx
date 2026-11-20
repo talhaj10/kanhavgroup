@@ -5,6 +5,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { Quote } from "lucide-react";
 import { KANHAV_DATA } from "@/data/kanhav-data";
+import { ParallaxImage } from "@/components/ui/Parallax";
 
 export const CeoMessage: React.FC = () => {
   return (
@@ -21,15 +22,17 @@ export const CeoMessage: React.FC = () => {
             className="lg:col-span-5 relative"
           >
             <div className="relative aspect-[4/5] rounded-2xl overflow-hidden border border-black/[0.08] shadow-md bg-[#f8f7f4]">
-              <Image
+              <ParallaxImage
                 src={KANHAV_DATA.ceo.image}
                 alt={KANHAV_DATA.ceo.name}
-                fill
-                className="object-cover object-top filter grayscale contrast-110 hover:grayscale-0 transition-all duration-500"
+                speed={-0.10}
+                scale={1.16}
+                containerClassName="absolute inset-0 w-full h-full"
+                imageClassName="object-top filter grayscale contrast-110 hover:grayscale-0 transition-all duration-500"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent z-10" />
 
-              <div className="absolute bottom-6 left-6 right-6">
+              <div className="absolute bottom-6 left-6 right-6 z-20">
                 <span className="font-mono text-xs uppercase tracking-wider text-kraft-orange font-semibold block">
                   Executive Leadership
                 </span>
