@@ -69,11 +69,6 @@ export const Navbar: React.FC = () => {
 
   const aboutSubLinks = [
     {
-      name: "About Us",
-      href: "/about-us",
-      desc: "Corporate profile, infrastructure & German warp knitting capacity",
-    },
-    {
       name: "Our Story & Heritage",
       href: "/about-us/our-story",
       desc: "Thirty-year evolution from 1994 texturising to 2024 composite glass fabrics",
@@ -118,16 +113,16 @@ export const Navbar: React.FC = () => {
               <span>Home</span>
             </Link>
 
-            {/* 2. About Us with Dropdown (containing About Us & Our Story) */}
+            {/* 2. About Us with Dropdown (clicking navigates directly to /about-us) */}
             <div
-              className="relative py-2"
+              className="relative py-2 flex items-center"
               onMouseEnter={handleMouseEnterAbout}
               onMouseLeave={handleMouseLeaveAbout}
             >
-              <button
-                type="button"
-                onClick={() => setAboutDropdownOpen(!aboutDropdownOpen)}
-                className={`text-xs sm:text-[13px] font-sans font-medium transition-colors flex items-center gap-1 focus:outline-none ${
+              <Link
+                href="/about-us"
+                onClick={() => setAboutDropdownOpen(false)}
+                className={`text-xs sm:text-[13px] font-sans font-medium transition-colors flex items-center gap-1 ${
                   isAboutActive ? "text-black font-semibold" : "text-black/75 hover:text-black"
                 }`}
                 aria-haspopup="true"
@@ -142,7 +137,7 @@ export const Navbar: React.FC = () => {
                     aboutDropdownOpen ? "rotate-180 text-[#cc410f]" : ""
                   }`}
                 />
-              </button>
+              </Link>
 
               {/* Desktop Dropdown Card */}
               {aboutDropdownOpen && (
@@ -293,29 +288,36 @@ export const Navbar: React.FC = () => {
               Home
             </Link>
 
-            {/* 2. About Us Accordion in Mobile */}
+            {/* 2. About Us in Mobile (clickable link to /about-us + Our Story sub-link) */}
             <div className="flex flex-col">
-              <button
-                type="button"
-                onClick={() => setMobileAboutOpen(!mobileAboutOpen)}
-                className={`min-h-[48px] px-2 py-2 text-xl font-bold uppercase tracking-wider flex items-center justify-between text-left rounded active:bg-black/5 transition-colors ${
-                  isAboutActive ? "text-black" : "text-black/70 hover:text-black"
-                }`}
-                aria-expanded={mobileAboutOpen}
-              >
-                <div className="flex items-center">
+              <div className="flex items-center justify-between min-h-[48px] px-2 py-2 rounded active:bg-black/5 transition-colors">
+                <Link
+                  href="/about-us"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className={`text-xl font-bold uppercase tracking-wider flex items-center flex-1 ${
+                    pathname === "/about-us" ? "text-black" : "text-black/70 hover:text-black"
+                  }`}
+                >
                   {isAboutActive && <span className="inline-block w-2 h-2 bg-[#cc410f] mr-2 shrink-0" />}
                   <span>About Us</span>
-                </div>
-                <ChevronDown
-                  className={`w-5 h-5 text-black/60 transition-transform duration-200 shrink-0 ${
-                    mobileAboutOpen ? "rotate-180 text-[#cc410f]" : ""
-                  }`}
-                />
-              </button>
+                </Link>
+                <button
+                  type="button"
+                  onClick={() => setMobileAboutOpen(!mobileAboutOpen)}
+                  className="p-2 -mr-2 text-black/60 hover:text-[#cc410f] focus:outline-none min-w-[44px] min-h-[44px] flex items-center justify-center cursor-pointer"
+                  aria-label="Toggle Our Story submenu"
+                  aria-expanded={mobileAboutOpen}
+                >
+                  <ChevronDown
+                    className={`w-5 h-5 transition-transform duration-200 shrink-0 ${
+                      mobileAboutOpen ? "rotate-180 text-[#cc410f]" : ""
+                    }`}
+                  />
+                </button>
+              </div>
 
               {mobileAboutOpen && (
-                <div className="pl-4 ml-2 my-1.5 space-y-1 border-l-2 border-[#cc410f]">
+                <div className="pl-4 ml-2 my-1 space-y-1 border-l-2 border-[#cc410f]">
                   {aboutSubLinks.map((subLink) => {
                     const active = pathname === subLink.href;
                     return (
